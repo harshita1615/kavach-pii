@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kavach-pii"
+version = "0.1.0.dev0"
+description = "Detect, mask and restore Indian PII (Aadhaar, PAN, UPI, bank details) before it reaches an LLM."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Harshita Chaudhary", email = "work.harshitachaudhary@gmail.com" }]
+keywords = ["pii", "privacy", "llm", "aadhaar", "pan", "upi", "india", "masking"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Security",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/kavach"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
