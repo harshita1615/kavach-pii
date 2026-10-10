@@ -141,6 +141,15 @@ def test_no_command_shows_usage(capsys):
     assert exc.value.code == 2
 
 
+def test_stdin_bom_is_ignored():
+    result = subprocess.run(
+        [sys.executable, "-m", "kavach", "redact"],
+        input=f"﻿PAN {PAN}".encode(),
+        capture_output=True,
+    )
+    assert result.stdout.decode("utf-8") == "PAN [PAN_1]"
+
+
 def test_python_dash_m(sample):
     result = subprocess.run(
         [sys.executable, "-m", "kavach", "scan", str(sample)],

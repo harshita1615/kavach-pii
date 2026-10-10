@@ -33,15 +33,19 @@ makes masking reversible, so your app keeps working after the LLM responds.
 
 ## Install
 
-From source, until the first PyPI release:
-
 ```bash
-git clone https://github.com/harshita1615/kavach-pii.git
-cd kavach-pii
-pip install -e .
+pip install kavach-pii
 ```
 
-Requires Python 3.10+.
+The package is `kavach-pii`; the import is `kavach`. Requires Python 3.10+ and has no
+dependencies. (An unrelated PyPI package named `kavach` also uses the `kavach` import name; do
+not install both in the same environment.)
+
+Until the first release is on PyPI, install from source:
+
+```bash
+pip install git+https://github.com/harshita1615/kavach-pii.git
+```
 
 ## What it detects
 
@@ -138,7 +142,8 @@ Kavach never does. Use the Python API for reversible masking.
 
 ## Accuracy
 
-Measured on the **holdout split** of Kavach's [public synthetic benchmark](benchmark/): 600
+Measured on the **holdout split** of Kavach's
+[public synthetic benchmark](https://github.com/harshita1615/kavach-pii/tree/main/benchmark): 600
 sentences in English, Hinglish and Hindi, 581 labelled values, and 141 sentences with no PII but
 plenty of look-alikes (order IDs, UTRs, PNRs, timestamps). The holdout templates were written after
 Kavach was tuned and have never been used to tune it.
@@ -181,7 +186,8 @@ chunks, then unmask) restored every value in all 467 holdout sentences Kavach ma
 drops the brackets (`PAN_1`), nothing is restored.
 
 Full tables, the tuning ("dev") split, and how to reproduce everything:
-[benchmark/README.md](benchmark/README.md). Results are written by `python -m benchmark.run_eval`
+[benchmark/README.md](https://github.com/harshita1615/kavach-pii/blob/main/benchmark/README.md).
+Results are written by `python -m benchmark.run_eval`
 and never edited by hand.
 
 ## Privacy principles
@@ -238,4 +244,4 @@ ruff check . && ruff format --check .
 
 ## License
 
-To be decided before the first release.
+[MIT](https://github.com/harshita1615/kavach-pii/blob/main/LICENSE) © 2026 Harshita Chaudhary
