@@ -1,0 +1,362 @@
+{
+  "meta": {
+    "split": "dev",
+    "dataset": "kavach_bench_v1.jsonl",
+    "sentences": 1500,
+    "gold_entities": 1925,
+    "clean_sentences": 374,
+    "date": "2026-10-10",
+    "python": "3.14.8",
+    "kavach": "0.1.0.dev0",
+    "presidio": "2.2.364"
+  },
+  "results": [
+    {
+      "name": "kavach",
+      "covers": [
+        "AADHAAR",
+        "PAN",
+        "UPI",
+        "IFSC",
+        "BANK_ACCOUNT",
+        "PHONE",
+        "GSTIN",
+        "EMAIL"
+      ],
+      "per_entity": {
+        "AADHAAR": {
+          "precision": 0.9914893617021276,
+          "recall": 1.0,
+          "f1": 0.9957264957264957,
+          "tp": 233,
+          "fp": 2,
+          "fn": 0,
+          "masked": 233,
+          "gold": 233,
+          "false_alarms": 0
+        },
+        "PAN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 305,
+          "fp": 0,
+          "fn": 0,
+          "masked": 305,
+          "gold": 305,
+          "false_alarms": 0
+        },
+        "UPI": {
+          "precision": 1.0,
+          "recall": 0.9458128078817734,
+          "f1": 0.9721518987341772,
+          "tp": 192,
+          "fp": 0,
+          "fn": 11,
+          "masked": 192,
+          "gold": 203,
+          "false_alarms": 0
+        },
+        "IFSC": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 212,
+          "fp": 0,
+          "fn": 0,
+          "masked": 212,
+          "gold": 212,
+          "false_alarms": 0
+        },
+        "BANK_ACCOUNT": {
+          "precision": 1.0,
+          "recall": 0.9197530864197531,
+          "f1": 0.9581993569131833,
+          "tp": 298,
+          "fp": 0,
+          "fn": 26,
+          "masked": 302,
+          "gold": 324,
+          "false_alarms": 0
+        },
+        "PHONE": {
+          "precision": 0.9880952380952381,
+          "recall": 1.0,
+          "f1": 0.9940119760479043,
+          "tp": 332,
+          "fp": 4,
+          "fn": 0,
+          "masked": 332,
+          "gold": 332,
+          "false_alarms": 0
+        },
+        "GSTIN": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 125,
+          "fp": 0,
+          "fn": 0,
+          "masked": 125,
+          "gold": 125,
+          "false_alarms": 0
+        },
+        "EMAIL": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 191,
+          "fp": 0,
+          "fn": 0,
+          "masked": 191,
+          "gold": 191,
+          "false_alarms": 0
+        }
+      },
+      "overall": {
+        "masked_recall": 0.9828571428571429,
+        "span_precision_untyped": 0.9989440337909187,
+        "span_recall_untyped": 0.9828571428571429,
+        "clean_sentences": 374,
+        "clean_sentences_flagged": 0
+      },
+      "masked_recall_by_lang": {
+        "en": 0.9755301794453507,
+        "hi": 1.0,
+        "hinglish": 0.9934065934065934
+      },
+      "latency_ms_per_1k_chars": 0.764217268969499
+    },
+    {
+      "name": "presidio-default",
+      "covers": [
+        "PHONE",
+        "EMAIL"
+      ],
+      "per_entity": {
+        "AADHAAR": {
+          "precision": null,
+          "recall": 0.0,
+          "f1": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 233,
+          "masked": 128,
+          "gold": 233,
+          "false_alarms": 0
+        },
+        "PAN": {
+          "precision": null,
+          "recall": 0.0,
+          "f1": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 305,
+          "masked": 19,
+          "gold": 305,
+          "false_alarms": 0
+        },
+        "UPI": {
+          "precision": null,
+          "recall": 0.0,
+          "f1": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 203,
+          "masked": 30,
+          "gold": 203,
+          "false_alarms": 0
+        },
+        "IFSC": {
+          "precision": null,
+          "recall": 0.0,
+          "f1": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 212,
+          "masked": 5,
+          "gold": 212,
+          "false_alarms": 0
+        },
+        "BANK_ACCOUNT": {
+          "precision": null,
+          "recall": 0.0,
+          "f1": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 324,
+          "masked": 308,
+          "gold": 324,
+          "false_alarms": 0
+        },
+        "PHONE": {
+          "precision": 0.5533333333333333,
+          "recall": 1.0,
+          "f1": 0.7124463519313305,
+          "tp": 332,
+          "fp": 268,
+          "fn": 0,
+          "masked": 332,
+          "gold": 332,
+          "false_alarms": 177
+        },
+        "GSTIN": {
+          "precision": null,
+          "recall": 0.0,
+          "f1": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 125,
+          "masked": 2,
+          "gold": 125,
+          "false_alarms": 0
+        },
+        "EMAIL": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 191,
+          "fp": 0,
+          "fn": 0,
+          "masked": 191,
+          "gold": 191,
+          "false_alarms": 0
+        }
+      },
+      "overall": {
+        "masked_recall": 0.5272727272727272,
+        "span_precision_untyped": 0.7130214917825537,
+        "span_recall_untyped": 0.29298701298701296,
+        "clean_sentences": 374,
+        "clean_sentences_flagged": 100
+      },
+      "masked_recall_by_lang": {
+        "en": 0.5269168026101142,
+        "hi": 0.5655737704918032,
+        "hinglish": 0.5076923076923077
+      },
+      "latency_ms_per_1k_chars": 74.7651482429398
+    },
+    {
+      "name": "presidio+india",
+      "covers": [
+        "AADHAAR",
+        "PAN",
+        "GSTIN",
+        "PHONE",
+        "EMAIL"
+      ],
+      "per_entity": {
+        "AADHAAR": {
+          "precision": 0.9173228346456693,
+          "recall": 1.0,
+          "f1": 0.9568788501026694,
+          "tp": 233,
+          "fp": 21,
+          "fn": 0,
+          "masked": 233,
+          "gold": 233,
+          "false_alarms": 15
+        },
+        "PAN": {
+          "precision": 0.4472140762463343,
+          "recall": 1.0,
+          "f1": 0.6180344478216818,
+          "tp": 305,
+          "fp": 377,
+          "fn": 0,
+          "masked": 305,
+          "gold": 305,
+          "false_alarms": 137
+        },
+        "UPI": {
+          "precision": null,
+          "recall": 0.0,
+          "f1": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 203,
+          "masked": 30,
+          "gold": 203,
+          "false_alarms": 0
+        },
+        "IFSC": {
+          "precision": null,
+          "recall": 0.0,
+          "f1": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 212,
+          "masked": 5,
+          "gold": 212,
+          "false_alarms": 0
+        },
+        "BANK_ACCOUNT": {
+          "precision": null,
+          "recall": 0.0,
+          "f1": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 324,
+          "masked": 308,
+          "gold": 324,
+          "false_alarms": 0
+        },
+        "PHONE": {
+          "precision": 0.5533333333333333,
+          "recall": 1.0,
+          "f1": 0.7124463519313305,
+          "tp": 332,
+          "fp": 268,
+          "fn": 0,
+          "masked": 332,
+          "gold": 332,
+          "false_alarms": 177
+        },
+        "GSTIN": {
+          "precision": 1.0,
+          "recall": 0.96,
+          "f1": 0.9795918367346939,
+          "tp": 120,
+          "fp": 0,
+          "fn": 5,
+          "masked": 121,
+          "gold": 125,
+          "false_alarms": 0
+        },
+        "EMAIL": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "tp": 191,
+          "fp": 0,
+          "fn": 0,
+          "masked": 191,
+          "gold": 191,
+          "false_alarms": 0
+        }
+      },
+      "overall": {
+        "masked_recall": 0.7922077922077922,
+        "span_precision_untyped": 0.755569306930693,
+        "span_recall_untyped": 0.6342857142857142,
+        "clean_sentences": 374,
+        "clean_sentences_flagged": 151
+      },
+      "masked_recall_by_lang": {
+        "en": 0.7814029363784666,
+        "hi": 0.8524590163934426,
+        "hinglish": 0.789010989010989
+      },
+      "latency_ms_per_1k_chars": 78.90402059100877
+    }
+  ],
+  "round_trip": {
+    "sentences": 1125,
+    "echo": 1.0,
+    "reordered": 1.0,
+    "case_and_spacing": 1.0,
+    "streamed": 1.0,
+    "brackets_dropped": 0.0
+  }
+}

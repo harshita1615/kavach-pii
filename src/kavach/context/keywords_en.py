@@ -47,3 +47,35 @@ KEYWORDS: dict[EntityType, tuple[str, ...]] = {
     EntityType.GSTIN: ("gst", "gstin", "gst no", "gst number", "gstn"),
     EntityType.EMAIL: ("email", "e-mail", "mail", "mail id"),
 }
+
+# Labels that, written directly before a number, say it is NOT personal data
+# ("Order no. 9876543210", "UTR 412345678901").
+NOT_PII_LABELS: tuple[str, ...] = (
+    "order",
+    "order id",
+    "ord",
+    "utr",
+    "txn",
+    "txn id",
+    "transaction",
+    "transaction id",
+    "ref",
+    "reference",
+    "invoice",
+    "inv",
+    "bill",
+    "receipt",
+    "challan",
+    "pnr",
+    "booking",
+    "booking id",
+    "ticket",
+    "tracking",
+    "tracking id",
+    "awb",
+    # Not "otp": OTPs are too short to match, and "OTP sent to 98765..." is a phone.
+    "batch",
+    "log entry",
+    "serial",
+    "sr",
+)

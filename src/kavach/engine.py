@@ -10,12 +10,16 @@ from __future__ import annotations
 import dataclasses
 from collections.abc import Iterable
 
-from kavach.context import has_context
+from kavach.context import has_context, has_not_pii_label
 from kavach.detectors import ALL_DETECTORS, Detector
 from kavach.types import Detection, EntityType
 
 DEFAULT_THRESHOLD = 0.5
 CONTEXT_BOOST = 0.2
+NOT_PII_LABEL_PENALTY = 0.4
+
+# Plain-number entities: the ones an "Order no." or "UTR" label can explain away.
+NUMERIC = frozenset({EntityType.AADHAAR, EntityType.BANK_ACCOUNT, EntityType.PHONE})
 
 # Tie-break when score and length are equal: more specific entity types first.
 SPECIFICITY = (
@@ -92,9 +96,16 @@ class Engine:
         """Canonical form of a detected value, used to give repeats one placeholder."""
         return self._detectors[detection.entity_type].normalize(detection.text_in(text))
 
-    @staticmethod
-    def _apply_context(text: str, detection: Detection) -> Detection:
-        if has_context(text, detection.start, detection.end, detection.entity_type):
-            boosted = min(1.0, round(detection.score + CONTEXT_BOOST, 4))
-            return dataclasses.replace(detection, score=boosted)
-        return detection
+    def _apply_context(self, text: str, detection: Detection) -> Detection:
+        score = detection.score
+        detector = self._detectors[detection.entity_type]
+        if not detector.requires_context and has_context(
+            text, detection.start, detection.end, detection.entity_type
+        ):
+            score += CONTEXT_BOOST
+        if detection.entity_type in NUMERIC and has_not_pii_label(text, detection.start):
+            score -= NOT_PII_LABEL_PENALTY
+        score = min(1.0, max(0.0, round(score, 4)))
+        if score == detection.score:
+            return detection
+        return dataclasses.replace(detection, score=score)

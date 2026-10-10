@@ -25,12 +25,16 @@ _PATTERN = re.compile(
 
 _NON_DIGITS = re.compile(r"\D")
 
-BASE_SCORE = 0.7
+# Context is already required, so the pipeline does not boost this score again.
+# Set so that a number with both phone and bank context resolves to PHONE (more
+# specific format), and one with only bank context resolves to BANK_ACCOUNT.
+BASE_SCORE = 0.8
 
 
 class BankAccountDetector(Detector):
     entity_type = EntityType.BANK_ACCOUNT
     name = "bank_account"
+    requires_context = True
 
     def detect(self, text: str) -> list[Detection]:
         detections = []

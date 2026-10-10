@@ -19,8 +19,8 @@ reply = call_llm(safe)  # the LLM only ever sees placeholders
 print(session.unmask(reply))  # 'Refund for ABCPE1234F has been sent to rahul@okaxis'
 ```
 
-> **Status:** early development (v0.1.0.dev0). Not yet on PyPI. Detection accuracy has not been
-> benchmarked yet; see [Accuracy](#accuracy).
+> **Status:** early development (v0.1.0.dev0). Not yet on PyPI. Measured accuracy on a synthetic
+> benchmark is in [Accuracy](#accuracy).
 
 ## Why
 
@@ -138,10 +138,51 @@ Kavach never does. Use the Python API for reversible masking.
 
 ## Accuracy
 
-Kavach will be measured on a public, fully synthetic benchmark (1,000+ labelled sentences in
-English and Hinglish, including hard negatives such as order IDs and timestamps), with precision,
-recall and F1 per entity, latency, and round-trip accuracy, alongside default Presidio on the
-same data. **No numbers are published yet; none will be until they are measured.**
+Measured on the **holdout split** of Kavach's [public synthetic benchmark](benchmark/): 600
+sentences in English, Hinglish and Hindi, 581 labelled values, and 141 sentences with no PII but
+plenty of look-alikes (order IDs, UTRs, PNRs, timestamps). The holdout templates were written after
+Kavach was tuned and have never been used to tune it.
+
+| Entity | Precision | Recall | Masked¹ |
+| --- | ---: | ---: | ---: |
+| Aadhaar | 94.9% | 100.0% | 100.0% |
+| PAN | 100.0% | 100.0% | 100.0% |
+| UPI ID | 100.0% | 93.6% | 93.6% |
+| IFSC | 100.0% | 100.0% | 100.0% |
+| Bank account | 100.0% | 83.7% | 84.5% |
+| Mobile number | 74.6% | 100.0% | 100.0% |
+| GSTIN | 100.0% | 100.0% | 100.0% |
+| Email | 100.0% | 100.0% | 100.0% |
+
+¹ The value was hidden by a detection of any type, so it would not reach the LLM.
+
+Compared with Microsoft Presidio 2.2.364 on the same data:
+
+| | Kavach | Presidio, default | Presidio + its Indian recognizers |
+| --- | ---: | ---: | ---: |
+| Values masked (all types) | **95.7%** | 55.9% | 79.3% |
+| Clean sentences wrongly flagged | **32 / 141** | 44 / 141 | 65 / 141 |
+| Latency, ms per 1,000 chars² | **0.8** | 93 | 92 |
+
+² On one Windows laptop, Python 3.14. Presidio's time is mostly spaCy NER, which also finds names
+and places that Kavach does not.
+
+Where Kavach is weaker:
+
+- **Phone false alarms.** A bare 10-digit number starting 6-9 (a coupon code or an order number
+  with no label) looks exactly like a mobile number. Kavach errs towards masking.
+- **Bank accounts without a keyword.** Kavach needs a context word nearby ("account", "a/c",
+  "khata"), so a line like "Copying from my passbook: 50100…" is missed. Presidio masks more bank
+  numbers here (91.5% vs 84.5%), mostly as other entity types.
+- **UPI IDs with handles Kavach does not know**, when no "UPI" keyword is nearby.
+
+Brackets-intact round trips (mask, then echo, reorder, change case or spacing, or stream in
+chunks, then unmask) restored every value in all 467 holdout sentences Kavach masked. If the LLM
+drops the brackets (`PAN_1`), nothing is restored.
+
+Full tables, the tuning ("dev") split, and how to reproduce everything:
+[benchmark/README.md](benchmark/README.md). Results are written by `python -m benchmark.run_eval`
+and never edited by hand.
 
 ## Privacy principles
 
@@ -163,9 +204,10 @@ Known gaps today:
 - Names, addresses and free-text personal details are not detected (planned for v2).
 - Landline numbers and special GSTIN formats (TDS/TCS, non-resident) are not covered.
 - About 1 in 10 random 12-digit numbers starting 2-9 pass the Aadhaar checksum, so some
-  timestamps and IDs may be masked as Aadhaar.
-- When a number has both bank and phone context, the placeholder type may be wrong, though the
-  value is still masked.
+  unlabelled IDs may be masked as Aadhaar. A label right before the number ("Order", "UTR",
+  "PNR", "Invoice") lowers the score.
+- Numbers can get the wrong placeholder type (for example a phone number as
+  `[BANK_ACCOUNT_1]`), though the value is still masked.
 - If the LLM rewrites a placeholder beyond small case and spacing changes, it cannot be
   restored.
 
@@ -181,7 +223,7 @@ ruff check . && ruff format --check .
 
 ## Roadmap
 
-1. **Python package** (this repo): core detection and masking ✅, benchmark, PyPI release
+1. **Python package** (this repo): core detection and masking ✅, benchmark ✅, PyPI release
 2. **Chrome extension**: warn before PII is pasted into ChatGPT, Claude or Gemini; runs fully
    on-device
 3. **Integrations**: web demo, OpenAI-compatible proxy, MCP server, Presidio recognizer pack,
@@ -190,8 +232,9 @@ ruff check . && ruff format --check .
 ## Related work
 
 - [Microsoft Presidio](https://github.com/microsoft/presidio): general PII detection and
-  anonymization; includes recognizers for Aadhaar, PAN, Indian passport, voter ID and vehicle
-  registration. Kavach aims to complement it, and a Presidio recognizer pack is planned.
+  anonymization. It ships recognizers for Aadhaar, PAN, GSTIN, Indian passport, voter ID and
+  vehicle registration, though they are not enabled in its default English setup (as of
+  2.2.364). Kavach aims to complement it, and a Presidio recognizer pack is planned.
 
 ## License
 

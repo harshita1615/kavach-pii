@@ -22,3 +22,18 @@ jobs:
       - run: ruff check .
       - run: ruff format --check .
       - run: pytest
+
+  benchmark:
+    # Kavach only; the Presidio comparison needs a 400 MB spaCy model and is run locally.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e .
+      - run: python -m benchmark.run_eval | tee -a "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-results
+          path: benchmark/results/

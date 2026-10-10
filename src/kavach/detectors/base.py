@@ -16,6 +16,9 @@ class Detector(ABC):
 
     entity_type: ClassVar[EntityType]
     name: ClassVar[str]
+    # True if the detector only reports matches that already have context, in
+    # which case the pipeline does not add the context boost a second time.
+    requires_context: ClassVar[bool] = False
 
     @abstractmethod
     def detect(self, text: str) -> list[Detection]:

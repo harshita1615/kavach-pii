@@ -38,3 +38,5 @@ KEYWORDS: dict[EntityType, tuple[str, ...]] = {
     EntityType.GSTIN: ("जीएसटी",),
     EntityType.EMAIL: ("ईमेल",),
 }
+
+NOT_PII_LABELS: tuple[str, ...] = ("ऑर्डर", "आर्डर", "बिल", "टिकट", "रसीद")

@@ -1,0 +1,600 @@
+{"id": "kb1h-00000", "lang": "en", "scenario": "support_chat", "text": "Is 626018 serviceable?", "entities": []}
+{"id": "kb1h-00001", "lang": "hinglish", "scenario": "support_chat", "text": "parcel 259083016613 kab tak aayega?", "entities": []}
+{"id": "kb1h-00002", "lang": "en", "scenario": "system", "text": "Confirmation 2860913909 for 2 adults, check-in 17 Jun 2026.", "entities": []}
+{"id": "kb1h-00003", "lang": "en", "scenario": "kyc", "text": "That ID (2308 2462 8196) was rejected by the system.", "entities": []}
+{"id": "kb1h-00004", "lang": "en", "scenario": "system", "text": "Device serial RV219935181IN, firmware 73982.", "entities": []}
+{"id": "kb1h-00005", "lang": "en", "scenario": "support_chat", "text": "Please quote INV-2026-093786 in all replies.", "entities": []}
+{"id": "kb1h-00006", "lang": "en", "scenario": "support_chat", "text": "matthew_ran69@test.co.in", "entities": [{"type": "EMAIL", "start": 0, "end": 24}]}
+{"id": "kb1h-00007", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 6432319487574911 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 21}]}
+{"id": "kb1h-00008", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc DCBL0276018 and the acc is 655979711471049746", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 54}]}
+{"id": "kb1h-00009", "lang": "hinglish", "scenario": "loan", "text": "PAN LAOHL2917B hai, CIBIL check karke batao", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00010", "lang": "en", "scenario": "system", "text": "Job started at 20260505231558 and finished in 42s.", "entities": []}
+{"id": "kb1h-00011", "lang": "en", "scenario": "support_chat", "text": "cbora@example.com", "entities": [{"type": "EMAIL", "start": 0, "end": 17}]}
+{"id": "kb1h-00012", "lang": "en", "scenario": "customer_service", "text": "Escalating: customer reachable at 917768426846 / gpau@example.in.", "entities": [{"type": "PHONE", "start": 34, "end": 46}, {"type": "EMAIL", "start": 49, "end": 64}]}
+{"id": "kb1h-00013", "lang": "hinglish", "scenario": "bank_complaint", "text": "khate me paise nahi aaye, khata no 22233079244", "entities": [{"type": "BANK_ACCOUNT", "start": 35, "end": 46}]}
+{"id": "kb1h-00014", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 2268 5995 2893 और पैन oyvcz8666m जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 25}, {"type": "PAN", "start": 33, "end": 43}]}
+{"id": "kb1h-00015", "lang": "en", "scenario": "kyc", "text": "Code UMBOC3721K is not a PAN, it's our internal reference.", "entities": []}
+{"id": "kb1h-00016", "lang": "en", "scenario": "support_chat", "text": "phonepe: 7815901396@cnrb", "entities": [{"type": "UPI", "start": 9, "end": 24}]}
+{"id": "kb1h-00017", "lang": "en", "scenario": "bank_complaint", "text": "Sent INR 77983 to beneficiary account 6957117777412 but it bounced.", "entities": [{"type": "BANK_ACCOUNT", "start": 38, "end": 51}]}
+{"id": "kb1h-00018", "lang": "en", "scenario": "support_chat", "text": "The code 6547280385 didn't work at checkout.", "entities": []}
+{"id": "kb1h-00019", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 4808 4148 5254 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}]}
+{"id": "kb1h-00020", "lang": "en", "scenario": "customer_service", "text": "gst - 35UHTTZ3363G6ZR, billing email tanishbarad8@example.org", "entities": [{"type": "GSTIN", "start": 6, "end": 21}, {"type": "EMAIL", "start": 37, "end": 61}]}
+{"id": "kb1h-00021", "lang": "en", "scenario": "support_chat", "text": "my num 916047439575, whatsapp only", "entities": [{"type": "PHONE", "start": 7, "end": 19}]}
+{"id": "kb1h-00022", "lang": "en", "scenario": "support_chat", "text": "pan HDHPP3537T", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00023", "lang": "en", "scenario": "support_chat", "text": "gabrielsaraf1@mail.example.com", "entities": [{"type": "EMAIL", "start": 0, "end": 30}]}
+{"id": "kb1h-00024", "lang": "en", "scenario": "support_chat", "text": "my num 08116372651, whatsapp only", "entities": [{"type": "PHONE", "start": 7, "end": 18}]}
+{"id": "kb1h-00025", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 861222029729975", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 41}]}
+{"id": "kb1h-00026", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 98200182633", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 37}]}
+{"id": "kb1h-00027", "lang": "en", "scenario": "loan", "text": "Co-applicant Ekaraj Khosla. Her PAN: GJQPH9548N. Her mobile: +91 65798 68282.", "entities": [{"type": "PAN", "start": 37, "end": 47}, {"type": "PHONE", "start": 61, "end": 76}]}
+{"id": "kb1h-00028", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर +916729022279 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 23}]}
+{"id": "kb1h-00029", "lang": "en", "scenario": "support_chat", "text": "my num 6588871803, whatsapp only", "entities": [{"type": "PHONE", "start": 7, "end": 17}]}
+{"id": "kb1h-00030", "lang": "en", "scenario": "kyc", "text": "Code BYDYR0175T is not a PAN, it's our internal reference.", "entities": []}
+{"id": "kb1h-00031", "lang": "hinglish", "scenario": "support_chat", "text": "parcel 998347887838 kab tak aayega?", "entities": []}
+{"id": "kb1h-00032", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 6837 2616 7516, the one on my new card is 813412524278.", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}, {"type": "AADHAAR", "start": 65, "end": 77}]}
+{"id": "kb1h-00033", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 367232686560 और पैन XLAPK8770M जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 23}, {"type": "PAN", "start": 31, "end": 41}]}
+{"id": "kb1h-00034", "lang": "hinglish", "scenario": "support_chat", "text": "bhai gautam.samra@uboi pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 22}]}
+{"id": "kb1h-00035", "lang": "en", "scenario": "system", "text": "Confirmation 4114402426 for 2 adults, check-in 23 Nov 2025.", "entities": []}
+{"id": "kb1h-00036", "lang": "en", "scenario": "loan", "text": "Co-applicant Udant Bhatia. Her PAN: RQSPP5140Z. Her mobile: 9140141931.", "entities": [{"type": "PAN", "start": 36, "end": 46}, {"type": "PHONE", "start": 60, "end": 70}]}
+{"id": "kb1h-00037", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc AIRP0864920 and the acc is 41240234483478245", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 53}]}
+{"id": "kb1h-00038", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर 6400088387 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 20}]}
+{"id": "kb1h-00039", "lang": "hinglish", "scenario": "support_chat", "text": "number note karlo 9167868433", "entities": [{"type": "PHONE", "start": 18, "end": 28}]}
+{"id": "kb1h-00040", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 465020146200, the one on my new card is 8849 3407 2241.", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}, {"type": "AADHAAR", "start": 63, "end": 77}]}
+{"id": "kb1h-00041", "lang": "en", "scenario": "system", "text": "Your parcel 555853043520 is out for delivery.", "entities": []}
+{"id": "kb1h-00042", "lang": "en", "scenario": "support_chat", "text": "8617483380 is my alternate number in case I don't pick up.", "entities": [{"type": "PHONE", "start": 0, "end": 10}]}
+{"id": "kb1h-00043", "lang": "en", "scenario": "loan", "text": "Salary credited to 3690604431 (Canara Bank, branch IFSC DBSS0965724) every month.", "entities": [{"type": "BANK_ACCOUNT", "start": 19, "end": 29}, {"type": "IFSC", "start": 56, "end": 67}]}
+{"id": "kb1h-00044", "lang": "en", "scenario": "loan", "text": "Co-applicant Chandran Kant. Her PAN: UEBCW8682Q. Her mobile: 06931002516.", "entities": [{"type": "PAN", "start": 37, "end": 47}, {"type": "PHONE", "start": 61, "end": 72}]}
+{"id": "kb1h-00045", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 10837407188181741 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 22}]}
+{"id": "kb1h-00046", "lang": "hinglish", "scenario": "bank_complaint", "text": "khate me paise nahi aaye, khata no 4337761740931", "entities": [{"type": "BANK_ACCOUNT", "start": 35, "end": 48}]}
+{"id": "kb1h-00047", "lang": "en", "scenario": "customer_service", "text": "Name: Kiaan Mann; DOB: 30/08/2026; PAN: uxwpj9920p; City: Panvel", "entities": [{"type": "PAN", "start": 40, "end": 50}]}
+{"id": "kb1h-00048", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर 08137484777 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 21}]}
+{"id": "kb1h-00049", "lang": "en", "scenario": "customer_service", "text": "gst - 36PAJFO1874M2Z9, billing email jacob939@example.in", "entities": [{"type": "GSTIN", "start": 6, "end": 21}, {"type": "EMAIL", "start": 37, "end": 56}]}
+{"id": "kb1h-00050", "lang": "en", "scenario": "customer_service", "text": "Name: Harshil Guha; DOB: 25/07/2026; PAN: EXQPI5298I; City: Motihari", "entities": [{"type": "PAN", "start": 42, "end": 52}]}
+{"id": "kb1h-00051", "lang": "en", "scenario": "kyc", "text": "pls verify kyc asap. aadhar no - 737760207769", "entities": [{"type": "AADHAAR", "start": 33, "end": 45}]}
+{"id": "kb1h-00052", "lang": "en", "scenario": "customer_service", "text": "Escalating: customer reachable at 07656515055 / dev.bhasin@example.in.", "entities": [{"type": "PHONE", "start": 34, "end": 45}, {"type": "EMAIL", "start": 48, "end": 69}]}
+{"id": "kb1h-00053", "lang": "en", "scenario": "customer_service", "text": "Name: Watika Wali; DOB: 06/09/2026; PAN: JILHC6691L; City: Kirari Suleman Nagar", "entities": [{"type": "PAN", "start": 41, "end": 51}]}
+{"id": "kb1h-00054", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 1410423468535 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 18}]}
+{"id": "kb1h-00055", "lang": "en", "scenario": "support_chat", "text": "Is 706883 serviceable?", "entities": []}
+{"id": "kb1h-00056", "lang": "en", "scenario": "loan", "text": "Salary credited to 1679247082 (HDFC Bank, branch IFSC INDB0446347) every month.", "entities": [{"type": "BANK_ACCOUNT", "start": 19, "end": 29}, {"type": "IFSC", "start": 54, "end": 65}]}
+{"id": "kb1h-00057", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 71221387837576283", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 43}]}
+{"id": "kb1h-00058", "lang": "hinglish", "scenario": "support_chat", "text": "parcel 412581535493 kab tak aayega?", "entities": []}
+{"id": "kb1h-00059", "lang": "en", "scenario": "support_chat", "text": "The code 6666836450 didn't work at checkout.", "entities": []}
+{"id": "kb1h-00060", "lang": "hinglish", "scenario": "loan", "text": "PAN SLEPV8831I hai, CIBIL check karke batao", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00061", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 8676 4020 6798, the one on my new card is 3687-7313-2285.", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}, {"type": "AADHAAR", "start": 65, "end": 79}]}
+{"id": "kb1h-00062", "lang": "en", "scenario": "support_chat", "text": "Thanks, Janaki Mistry! Talk soon.", "entities": []}
+{"id": "kb1h-00063", "lang": "hinglish", "scenario": "support_chat", "text": "number note karlo +91-6718002390", "entities": [{"type": "PHONE", "start": 18, "end": 32}]}
+{"id": "kb1h-00064", "lang": "en", "scenario": "kyc", "text": "Code JEURQ6111J is not a PAN, it's our internal reference.", "entities": []}
+{"id": "kb1h-00065", "lang": "en", "scenario": "system", "text": "Your parcel 993643900847 is out for delivery.", "entities": []}
+{"id": "kb1h-00066", "lang": "en", "scenario": "bank_complaint", "text": "Sent ₹146,168 to beneficiary account 883830640037 but it bounced.", "entities": [{"type": "BANK_ACCOUNT", "start": 37, "end": 49}]}
+{"id": "kb1h-00067", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 243653705656304", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 41}]}
+{"id": "kb1h-00068", "lang": "en", "scenario": "system", "text": "Job started at 20261228160412 and finished in 42s.", "entities": []}
+{"id": "kb1h-00069", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 633734419793, the one on my new card is 576092603095.", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}, {"type": "AADHAAR", "start": 63, "end": 75}]}
+{"id": "kb1h-00070", "lang": "hi", "scenario": "system", "text": "पार्सल 102675112532 रास्ते में है।", "entities": []}
+{"id": "kb1h-00071", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 80465572101415618 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 35}]}
+{"id": "kb1h-00072", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 754610735873 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 30}]}
+{"id": "kb1h-00073", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर +91 85706 36060 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 25}]}
+{"id": "kb1h-00074", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 243195545902 और पैन KIJCA9103D जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 23}, {"type": "PAN", "start": 31, "end": 41}]}
+{"id": "kb1h-00075", "lang": "en", "scenario": "customer_service", "text": "Name: Pranit Kohli; DOB: 11 Dec 2025; PAN: MZITN7272A; City: Loni", "entities": [{"type": "PAN", "start": 43, "end": 53}]}
+{"id": "kb1h-00076", "lang": "en", "scenario": "loan", "text": "Salary credited to 3935575918362 (HDFC Bank, branch IFSC YESB0885261) every month.", "entities": [{"type": "BANK_ACCOUNT", "start": 19, "end": 32}, {"type": "IFSC", "start": 57, "end": 68}]}
+{"id": "kb1h-00077", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc HSBC0316772 and the acc is 367938144494", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 48}]}
+{"id": "kb1h-00078", "lang": "en", "scenario": "system", "text": "Files 644373233249 and 451643883170 were archived.", "entities": []}
+{"id": "kb1h-00079", "lang": "en", "scenario": "support_chat", "text": "warda.oza@example.com", "entities": [{"type": "EMAIL", "start": 0, "end": 21}]}
+{"id": "kb1h-00080", "lang": "en", "scenario": "customer_service", "text": "Escalating: customer reachable at +91-9375043103 / saumyamani4@example.com.", "entities": [{"type": "PHONE", "start": 34, "end": 48}, {"type": "EMAIL", "start": 51, "end": 74}]}
+{"id": "kb1h-00081", "lang": "en", "scenario": "kyc", "text": "Code LQFYT4019W is not a PAN, it's our internal reference.", "entities": []}
+{"id": "kb1h-00082", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 7305 5203 4090 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}]}
+{"id": "kb1h-00083", "lang": "en", "scenario": "support_chat", "text": "Please quote INV-2026-305652 in all replies.", "entities": []}
+{"id": "kb1h-00084", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc CBIN0787161 and the acc is 928126464460495", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 51}]}
+{"id": "kb1h-00085", "lang": "en", "scenario": "support_chat", "text": "edalal@mail.example.com", "entities": [{"type": "EMAIL", "start": 0, "end": 23}]}
+{"id": "kb1h-00086", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 2536 6306 2612 और पैन LOYPF2008E जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 25}, {"type": "PAN", "start": 33, "end": 43}]}
+{"id": "kb1h-00087", "lang": "en", "scenario": "support_chat", "text": "9199582254 is my alternate number in case I don't pick up.", "entities": [{"type": "PHONE", "start": 0, "end": 10}]}
+{"id": "kb1h-00088", "lang": "en", "scenario": "system", "text": "Your parcel 311673420750 is out for delivery.", "entities": []}
+{"id": "kb1h-00089", "lang": "en", "scenario": "support_chat", "text": "phonepe: 7396937293@paytm", "entities": [{"type": "UPI", "start": 9, "end": 25}]}
+{"id": "kb1h-00090", "lang": "en", "scenario": "system", "text": "Your parcel 168265123308 is out for delivery.", "entities": []}
+{"id": "kb1h-00091", "lang": "hinglish", "scenario": "support_chat", "text": "bhai nitesh_oom25@axisb pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 23}]}
+{"id": "kb1h-00092", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 8978 4649 3663 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}]}
+{"id": "kb1h-00093", "lang": "en", "scenario": "loan", "text": "Salary credited to 9720097737972761 (SBI, branch IFSC KVBL0788002) every month.", "entities": [{"type": "BANK_ACCOUNT", "start": 19, "end": 35}, {"type": "IFSC", "start": 54, "end": 65}]}
+{"id": "kb1h-00094", "lang": "hinglish", "scenario": "customer_service", "text": "humara gstin 06CBYPQ6201T9ZD hai, bill isi pe banana", "entities": [{"type": "GSTIN", "start": 13, "end": 28}]}
+{"id": "kb1h-00095", "lang": "en", "scenario": "support_chat", "text": "9423159425@cred", "entities": [{"type": "UPI", "start": 0, "end": 15}]}
+{"id": "kb1h-00096", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 572487394983550326", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 44}]}
+{"id": "kb1h-00097", "lang": "en", "scenario": "system", "text": "Files 345624180578 and 991486546592 were archived.", "entities": []}
+{"id": "kb1h-00098", "lang": "en", "scenario": "customer_service", "text": "Escalating: customer reachable at 8517329048 / oviyabaral6@example.com.", "entities": [{"type": "PHONE", "start": 34, "end": 44}, {"type": "EMAIL", "start": 47, "end": 70}]}
+{"id": "kb1h-00099", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 2324 9668 5020 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}]}
+{"id": "kb1h-00100", "lang": "en", "scenario": "system", "text": "Job started at 20261021010136 and finished in 42s.", "entities": []}
+{"id": "kb1h-00101", "lang": "hi", "scenario": "support_chat", "text": "farasmurthy4@cnrb पर भुगतान करें।", "entities": [{"type": "UPI", "start": 0, "end": 17}]}
+{"id": "kb1h-00102", "lang": "en", "scenario": "support_chat", "text": "I got charged INR 216755 for item 8923597220.", "entities": []}
+{"id": "kb1h-00103", "lang": "en", "scenario": "customer_service", "text": "Escalating: customer reachable at 7271124640 / harinipalla6@test.co.in.", "entities": [{"type": "PHONE", "start": 34, "end": 44}, {"type": "EMAIL", "start": 47, "end": 70}]}
+{"id": "kb1h-00104", "lang": "en", "scenario": "system", "text": "Job started at 202611191438 and finished in 42s.", "entities": []}
+{"id": "kb1h-00105", "lang": "en", "scenario": "support_chat", "text": "Is 832000 serviceable?", "entities": []}
+{"id": "kb1h-00106", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 262320109836, the one on my new card is 5898 6928 4145.", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}, {"type": "AADHAAR", "start": 63, "end": 77}]}
+{"id": "kb1h-00107", "lang": "hinglish", "scenario": "customer_service", "text": "humara gstin 31XOCTX7231I7ZV hai, bill isi pe banana", "entities": [{"type": "GSTIN", "start": 13, "end": 28}]}
+{"id": "kb1h-00108", "lang": "en", "scenario": "support_chat", "text": "8048684431@axisb", "entities": [{"type": "UPI", "start": 0, "end": 16}]}
+{"id": "kb1h-00109", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 224332536591 और पैन UWVHR7780A जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 23}, {"type": "PAN", "start": 31, "end": 41}]}
+{"id": "kb1h-00110", "lang": "hinglish", "scenario": "support_chat", "text": "mail kar dena ekapad585@example.org pe", "entities": [{"type": "EMAIL", "start": 14, "end": 35}]}
+{"id": "kb1h-00111", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 569919220011 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}]}
+{"id": "kb1h-00112", "lang": "en", "scenario": "customer_service", "text": "gst - 11AABPE0101SWZH, billing email anamika_som35@test.co.in", "entities": [{"type": "GSTIN", "start": 6, "end": 21}, {"type": "EMAIL", "start": 37, "end": 61}]}
+{"id": "kb1h-00113", "lang": "en", "scenario": "customer_service", "text": "Escalating: customer reachable at 06613331001 / dhruv_bha71@example.com.", "entities": [{"type": "PHONE", "start": 34, "end": 45}, {"type": "EMAIL", "start": 48, "end": 71}]}
+{"id": "kb1h-00114", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर 7134556405 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 20}]}
+{"id": "kb1h-00115", "lang": "en", "scenario": "customer_service", "text": "gst - 19KYTCQ7490Z6ZP, billing email dsehgal@example.com", "entities": [{"type": "GSTIN", "start": 6, "end": 21}, {"type": "EMAIL", "start": 37, "end": 56}]}
+{"id": "kb1h-00116", "lang": "hinglish", "scenario": "support_chat", "text": "bhai bhavani.raju@citigold pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 26}]}
+{"id": "kb1h-00117", "lang": "hi", "scenario": "support_chat", "text": "idika.bajaj@idbi पर भुगतान करें।", "entities": [{"type": "UPI", "start": 0, "end": 16}]}
+{"id": "kb1h-00118", "lang": "hi", "scenario": "support_chat", "text": "6834005717@jkb पर भुगतान करें।", "entities": [{"type": "UPI", "start": 0, "end": 14}]}
+{"id": "kb1h-00119", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 4795 8492 4337, the one on my new card is 3178 1551 6613.", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}, {"type": "AADHAAR", "start": 65, "end": 79}]}
+{"id": "kb1h-00120", "lang": "hinglish", "scenario": "support_chat", "text": "bhai om_dad64@okicici pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 21}]}
+{"id": "kb1h-00121", "lang": "hinglish", "scenario": "bank_complaint", "text": "khate me paise nahi aaye, khata no 92637289905958278", "entities": [{"type": "BANK_ACCOUNT", "start": 35, "end": 52}]}
+{"id": "kb1h-00122", "lang": "en", "scenario": "support_chat", "text": "wakeeta_bha31@mail.example.com", "entities": [{"type": "EMAIL", "start": 0, "end": 30}]}
+{"id": "kb1h-00123", "lang": "en", "scenario": "support_chat", "text": "tejas343@indus", "entities": [{"type": "UPI", "start": 0, "end": 14}]}
+{"id": "kb1h-00124", "lang": "en", "scenario": "support_chat", "text": "I've paid from kai_kot48@ikwik twice. Please reverse one.", "entities": [{"type": "UPI", "start": 15, "end": 30}]}
+{"id": "kb1h-00125", "lang": "en", "scenario": "support_chat", "text": "Please quote INV-2026-922359 in all replies.", "entities": []}
+{"id": "kb1h-00126", "lang": "en", "scenario": "support_chat", "text": "I've paid from mitali265@federal twice. Please reverse one.", "entities": [{"type": "UPI", "start": 15, "end": 32}]}
+{"id": "kb1h-00127", "lang": "hinglish", "scenario": "loan", "text": "PAN XDFLV1362E hai, CIBIL check karke batao", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00128", "lang": "hi", "scenario": "system", "text": "पार्सल 564311436700 रास्ते में है।", "entities": []}
+{"id": "kb1h-00129", "lang": "en", "scenario": "loan", "text": "Co-applicant Faris Ganesan. Her PAN: ZNWPH8470E. Her mobile: +919036996393.", "entities": [{"type": "PAN", "start": 37, "end": 47}, {"type": "PHONE", "start": 61, "end": 74}]}
+{"id": "kb1h-00130", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 3765 4163 6241 और पैन ATNPQ2506P जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 25}, {"type": "PAN", "start": 33, "end": 43}]}
+{"id": "kb1h-00131", "lang": "en", "scenario": "support_chat", "text": "I've paid from saumya734@indus twice. Please reverse one.", "entities": [{"type": "UPI", "start": 15, "end": 30}]}
+{"id": "kb1h-00132", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 5851 9783 7806 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}]}
+{"id": "kb1h-00133", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 785673268190, the one on my new card is 2446 6001 6654.", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}, {"type": "AADHAAR", "start": 63, "end": 77}]}
+{"id": "kb1h-00134", "lang": "en", "scenario": "system", "text": "Files 234683673221 and 478325674827 were archived.", "entities": []}
+{"id": "kb1h-00135", "lang": "hinglish", "scenario": "customer_service", "text": "humara gstin 23VINFV2704L7ZS hai, bill isi pe banana", "entities": [{"type": "GSTIN", "start": 13, "end": 28}]}
+{"id": "kb1h-00136", "lang": "en", "scenario": "support_chat", "text": "74577 69152 is my alternate number in case I don't pick up.", "entities": [{"type": "PHONE", "start": 0, "end": 11}]}
+{"id": "kb1h-00137", "lang": "hinglish", "scenario": "support_chat", "text": "bhai 8285900314@barodampay pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 26}]}
+{"id": "kb1h-00138", "lang": "en", "scenario": "customer_service", "text": "gst - 17HFYTO5236Z3ZC, billing email qushimallick3@test.co.in", "entities": [{"type": "GSTIN", "start": 6, "end": 21}, {"type": "EMAIL", "start": 37, "end": 61}]}
+{"id": "kb1h-00139", "lang": "hinglish", "scenario": "loan", "text": "PAN TZCHV8437W hai, CIBIL check karke batao", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00140", "lang": "en", "scenario": "support_chat", "text": "The code 6718146327 didn't work at checkout.", "entities": []}
+{"id": "kb1h-00141", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 9807 7273 7281 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}]}
+{"id": "kb1h-00142", "lang": "en", "scenario": "kyc", "text": "Code XAFUO9747L is not a PAN, it's our internal reference.", "entities": []}
+{"id": "kb1h-00143", "lang": "hi", "scenario": "support_chat", "text": "8009051877@cbin पर भुगतान करें।", "entities": [{"type": "UPI", "start": 0, "end": 15}]}
+{"id": "kb1h-00144", "lang": "en", "scenario": "support_chat", "text": "Thanks, Vihaan Dora! Talk soon.", "entities": []}
+{"id": "kb1h-00145", "lang": "en", "scenario": "kyc", "text": "Code YEBOW6251V is not a PAN, it's our internal reference.", "entities": []}
+{"id": "kb1h-00146", "lang": "en", "scenario": "system", "text": "Job started at 202606111549 and finished in 42s.", "entities": []}
+{"id": "kb1h-00147", "lang": "en", "scenario": "support_chat", "text": "Please quote INV-2026-346564 in all replies.", "entities": []}
+{"id": "kb1h-00148", "lang": "hinglish", "scenario": "bank_complaint", "text": "khate me paise nahi aaye, khata no 14457658485371535", "entities": [{"type": "BANK_ACCOUNT", "start": 35, "end": 52}]}
+{"id": "kb1h-00149", "lang": "hi", "scenario": "support_chat", "text": "fitan.goda@dcb पर भुगतान करें।", "entities": [{"type": "UPI", "start": 0, "end": 14}]}
+{"id": "kb1h-00150", "lang": "en", "scenario": "support_chat", "text": "my num 6686890641, whatsapp only", "entities": [{"type": "PHONE", "start": 7, "end": 17}]}
+{"id": "kb1h-00151", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर +91-7790889692 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 24}]}
+{"id": "kb1h-00152", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc UCBA0CG0721 and the acc is 16105248442", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 47}]}
+{"id": "kb1h-00153", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 150699079801696 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 33}]}
+{"id": "kb1h-00154", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc AIRP0992768 and the acc is 2732060011", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 46}]}
+{"id": "kb1h-00155", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 512704937203 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}]}
+{"id": "kb1h-00156", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 414877400004 और पैन tcmpj4927t जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 23}, {"type": "PAN", "start": 31, "end": 41}]}
+{"id": "kb1h-00157", "lang": "en", "scenario": "system", "text": "Files 697722152676 and 849544099590 were archived.", "entities": []}
+{"id": "kb1h-00158", "lang": "hinglish", "scenario": "support_chat", "text": "bhai matthewkata7@yesbank pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 25}]}
+{"id": "kb1h-00159", "lang": "en", "scenario": "support_chat", "text": "7666937405 is my alternate number in case I don't pick up.", "entities": [{"type": "PHONE", "start": 0, "end": 10}]}
+{"id": "kb1h-00160", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 829042924877, the one on my new card is 3887 6334 9061.", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}, {"type": "AADHAAR", "start": 63, "end": 77}]}
+{"id": "kb1h-00161", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc HSBC0067818 and the acc is 23698485789333", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 50}]}
+{"id": "kb1h-00162", "lang": "en", "scenario": "support_chat", "text": "phonepe: viraj_aro56@hdfcbank", "entities": [{"type": "UPI", "start": 9, "end": 29}]}
+{"id": "kb1h-00163", "lang": "hinglish", "scenario": "support_chat", "text": "bhai vedhikagopal3@okaxis pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 25}]}
+{"id": "kb1h-00164", "lang": "en", "scenario": "customer_service", "text": "Name: Baghyawati Agrawal; DOB: 30/01/2026; PAN: pldpl7125t; City: Deoghar", "entities": [{"type": "PAN", "start": 48, "end": 58}]}
+{"id": "kb1h-00165", "lang": "en", "scenario": "support_chat", "text": "Thanks, Eiravati Dass! Talk soon.", "entities": []}
+{"id": "kb1h-00166", "lang": "en", "scenario": "loan", "text": "Salary credited to 9901039799344 (Axis Bank, branch IFSC PLKB0924053) every month.", "entities": [{"type": "BANK_ACCOUNT", "start": 19, "end": 32}, {"type": "IFSC", "start": 57, "end": 68}]}
+{"id": "kb1h-00167", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc JAKA0008577 and the acc is 7114593186", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 46}]}
+{"id": "kb1h-00168", "lang": "en", "scenario": "system", "text": "Files 372533204508 and 104870125034 were archived.", "entities": []}
+{"id": "kb1h-00169", "lang": "en", "scenario": "support_chat", "text": "Thanks, Tanmayi Ramanathan! Talk soon.", "entities": []}
+{"id": "kb1h-00170", "lang": "hinglish", "scenario": "support_chat", "text": "parcel 817554615762 kab tak aayega?", "entities": []}
+{"id": "kb1h-00171", "lang": "en", "scenario": "system", "text": "Your parcel 832073023195 is out for delivery.", "entities": []}
+{"id": "kb1h-00172", "lang": "hinglish", "scenario": "support_chat", "text": "7716017553 wala item damaged tha", "entities": []}
+{"id": "kb1h-00173", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 9152 5302 7824 और पैन NNHPE0494K जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 25}, {"type": "PAN", "start": 33, "end": 43}]}
+{"id": "kb1h-00174", "lang": "en", "scenario": "system", "text": "Device serial IP157712803IN, firmware 73402.", "entities": []}
+{"id": "kb1h-00175", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 5143564331646204 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 21}]}
+{"id": "kb1h-00176", "lang": "en", "scenario": "kyc", "text": "That ID (4078 5827 0842) was rejected by the system.", "entities": []}
+{"id": "kb1h-00177", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 70634922283239", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 40}]}
+{"id": "kb1h-00178", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc ABCX0XP4232 and the acc is 494301860855471067", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 54}]}
+{"id": "kb1h-00179", "lang": "hi", "scenario": "support_chat", "text": "mitalirastogi6@jio पर भुगतान करें।", "entities": [{"type": "UPI", "start": 0, "end": 18}]}
+{"id": "kb1h-00180", "lang": "en", "scenario": "support_chat", "text": "6259905878 is my alternate number in case I don't pick up.", "entities": [{"type": "PHONE", "start": 0, "end": 10}]}
+{"id": "kb1h-00181", "lang": "en", "scenario": "loan", "text": "Salary credited to 45690417780882 (SBI, branch IFSC CITI0221448) every month.", "entities": [{"type": "BANK_ACCOUNT", "start": 19, "end": 33}, {"type": "IFSC", "start": 52, "end": 63}]}
+{"id": "kb1h-00182", "lang": "en", "scenario": "system", "text": "Confirmation 1013409978 for 2 adults, check-in 11/08/2026.", "entities": []}
+{"id": "kb1h-00183", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 2512041779841116 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 34}]}
+{"id": "kb1h-00184", "lang": "en", "scenario": "customer_service", "text": "Supplier: Vasatika Rattan, GSTIN 09EVSTO6206W4ZU, contact 9998060556", "entities": [{"type": "GSTIN", "start": 33, "end": 48}, {"type": "PHONE", "start": 58, "end": 68}]}
+{"id": "kb1h-00185", "lang": "hinglish", "scenario": "support_chat", "text": "bhai davidhalder6@ptsbi pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 23}]}
+{"id": "kb1h-00186", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 880582536051 और पैन KNGPQ0326M जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 23}, {"type": "PAN", "start": 31, "end": 41}]}
+{"id": "kb1h-00187", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 1009494809141806", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 42}]}
+{"id": "kb1h-00188", "lang": "hinglish", "scenario": "customer_service", "text": "humara gstin 16LUFCD0984C5ZC hai, bill isi pe banana", "entities": [{"type": "GSTIN", "start": 13, "end": 28}]}
+{"id": "kb1h-00189", "lang": "hinglish", "scenario": "support_chat", "text": "number note karlo +91-9982718246", "entities": [{"type": "PHONE", "start": 18, "end": 32}]}
+{"id": "kb1h-00190", "lang": "hinglish", "scenario": "support_chat", "text": "number note karlo 8318479936", "entities": [{"type": "PHONE", "start": 18, "end": 28}]}
+{"id": "kb1h-00191", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 778497740353, the one on my new card is 896052358575.", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}, {"type": "AADHAAR", "start": 63, "end": 75}]}
+{"id": "kb1h-00192", "lang": "hinglish", "scenario": "loan", "text": "PAN GJBFY0281T hai, CIBIL check karke batao", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00193", "lang": "en", "scenario": "loan", "text": "Co-applicant Sathvik Sastry. Her PAN: BQMPO5183V. Her mobile: 7655239948.", "entities": [{"type": "PAN", "start": 38, "end": 48}, {"type": "PHONE", "start": 62, "end": 72}]}
+{"id": "kb1h-00194", "lang": "en", "scenario": "support_chat", "text": "nchoudhary@example.org", "entities": [{"type": "EMAIL", "start": 0, "end": 22}]}
+{"id": "kb1h-00195", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 461068917692 और पैन ITTFD6774X जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 23}, {"type": "PAN", "start": 31, "end": 41}]}
+{"id": "kb1h-00196", "lang": "en", "scenario": "support_chat", "text": "harini_ben60@test.co.in", "entities": [{"type": "EMAIL", "start": 0, "end": 23}]}
+{"id": "kb1h-00197", "lang": "en", "scenario": "support_chat", "text": "harsh.acharya@paytm", "entities": [{"type": "UPI", "start": 0, "end": 19}]}
+{"id": "kb1h-00198", "lang": "hi", "scenario": "support_chat", "text": "matthew_yad33@superyes पर भुगतान करें।", "entities": [{"type": "UPI", "start": 0, "end": 22}]}
+{"id": "kb1h-00199", "lang": "hinglish", "scenario": "support_chat", "text": "mail kar dena harrisonpatla5@example.in pe", "entities": [{"type": "EMAIL", "start": 14, "end": 39}]}
+{"id": "kb1h-00200", "lang": "en", "scenario": "kyc", "text": "That ID (8969 3155 9355) was rejected by the system.", "entities": []}
+{"id": "kb1h-00201", "lang": "en", "scenario": "support_chat", "text": "my num +91 90004 97484, whatsapp only", "entities": [{"type": "PHONE", "start": 7, "end": 22}]}
+{"id": "kb1h-00202", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 8886-6750-9571 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}]}
+{"id": "kb1h-00203", "lang": "en", "scenario": "loan", "text": "Co-applicant Ekavir Johal. Her PAN: QHDPN5868S. Her mobile: 7676799581.", "entities": [{"type": "PAN", "start": 36, "end": 46}, {"type": "PHONE", "start": 60, "end": 70}]}
+{"id": "kb1h-00204", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 61482145862848 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 32}]}
+{"id": "kb1h-00205", "lang": "en", "scenario": "support_chat", "text": "krisha.dixit@hsbc", "entities": [{"type": "UPI", "start": 0, "end": 17}]}
+{"id": "kb1h-00206", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 359060048048, the one on my new card is 3900 3278 9481.", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}, {"type": "AADHAAR", "start": 63, "end": 77}]}
+{"id": "kb1h-00207", "lang": "en", "scenario": "kyc", "text": "pls verify kyc asap. aadhar no - 493691228816", "entities": [{"type": "AADHAAR", "start": 33, "end": 45}]}
+{"id": "kb1h-00208", "lang": "en", "scenario": "support_chat", "text": "my num 6287796009, whatsapp only", "entities": [{"type": "PHONE", "start": 7, "end": 17}]}
+{"id": "kb1h-00209", "lang": "en", "scenario": "kyc", "text": "pls verify kyc asap. aadhar no - 5542 0419 1531", "entities": [{"type": "AADHAAR", "start": 33, "end": 47}]}
+{"id": "kb1h-00210", "lang": "en", "scenario": "system", "text": "Confirmation 7003690709 for 2 adults, check-in 13/02/2027.", "entities": []}
+{"id": "kb1h-00211", "lang": "en", "scenario": "support_chat", "text": "my num +91 73029 25074, whatsapp only", "entities": [{"type": "PHONE", "start": 7, "end": 22}]}
+{"id": "kb1h-00212", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 671369364678 और पैन CFFFL6204M जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 23}, {"type": "PAN", "start": 31, "end": 41}]}
+{"id": "kb1h-00213", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 358656116589 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}]}
+{"id": "kb1h-00214", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 845360405232 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 17}]}
+{"id": "kb1h-00215", "lang": "en", "scenario": "kyc", "text": "That ID (3348 2877 3258) was rejected by the system.", "entities": []}
+{"id": "kb1h-00216", "lang": "en", "scenario": "kyc", "text": "Code GXMWU9347Q is not a PAN, it's our internal reference.", "entities": []}
+{"id": "kb1h-00217", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 5372 4979 5831, the one on my new card is 521818460924.", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}, {"type": "AADHAAR", "start": 65, "end": 77}]}
+{"id": "kb1h-00218", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 8123 5311 8584, the one on my new card is 5141 3426 4560.", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}, {"type": "AADHAAR", "start": 65, "end": 79}]}
+{"id": "kb1h-00219", "lang": "en", "scenario": "support_chat", "text": "I got charged INR 243613 for item 7420556073.", "entities": []}
+{"id": "kb1h-00220", "lang": "en", "scenario": "support_chat", "text": "zpalan@example.org", "entities": [{"type": "EMAIL", "start": 0, "end": 18}]}
+{"id": "kb1h-00221", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 324149306092 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}]}
+{"id": "kb1h-00222", "lang": "en", "scenario": "support_chat", "text": "I got charged ₹103,954 for item 7608429397.", "entities": []}
+{"id": "kb1h-00223", "lang": "hi", "scenario": "support_chat", "text": "janujasom6@indus पर भुगतान करें।", "entities": [{"type": "UPI", "start": 0, "end": 16}]}
+{"id": "kb1h-00224", "lang": "hinglish", "scenario": "support_chat", "text": "mail kar dena jason.dalia@example.com pe", "entities": [{"type": "EMAIL", "start": 14, "end": 37}]}
+{"id": "kb1h-00225", "lang": "hinglish", "scenario": "customer_service", "text": "humara gstin 19HVDCB5351N1ZY hai, bill isi pe banana", "entities": [{"type": "GSTIN", "start": 13, "end": 28}]}
+{"id": "kb1h-00226", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 448156758780368 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 33}]}
+{"id": "kb1h-00227", "lang": "hi", "scenario": "support_chat", "text": "vinaya45@dcb पर भुगतान करें।", "entities": [{"type": "UPI", "start": 0, "end": 12}]}
+{"id": "kb1h-00228", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 52823843025561342 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 22}]}
+{"id": "kb1h-00229", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 87330872542 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 29}]}
+{"id": "kb1h-00230", "lang": "en", "scenario": "system", "text": "Files 399351862297 and 731405730044 were archived.", "entities": []}
+{"id": "kb1h-00231", "lang": "en", "scenario": "support_chat", "text": "varsha114@example.org", "entities": [{"type": "EMAIL", "start": 0, "end": 21}]}
+{"id": "kb1h-00232", "lang": "en", "scenario": "support_chat", "text": "pan DFKPO7954F", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00233", "lang": "en", "scenario": "system", "text": "Confirmation 1077159417 for 2 adults, check-in 08 Jun 2026.", "entities": []}
+{"id": "kb1h-00234", "lang": "hinglish", "scenario": "support_chat", "text": "mail kar dena fdhawan@example.in pe", "entities": [{"type": "EMAIL", "start": 14, "end": 32}]}
+{"id": "kb1h-00235", "lang": "en", "scenario": "support_chat", "text": "Please quote INV-2026-850514 in all replies.", "entities": []}
+{"id": "kb1h-00236", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 531200624528214956", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 44}]}
+{"id": "kb1h-00237", "lang": "en", "scenario": "customer_service", "text": "Supplier: Hema Lanka, GSTIN 12ERLPI3001S6ZJ, contact +91-9037672499", "entities": [{"type": "GSTIN", "start": 28, "end": 43}, {"type": "PHONE", "start": 53, "end": 67}]}
+{"id": "kb1h-00238", "lang": "en", "scenario": "loan", "text": "Co-applicant Neel Varty. Her PAN: HFEPO6107P. Her mobile: +91 80098 62410.", "entities": [{"type": "PAN", "start": 34, "end": 44}, {"type": "PHONE", "start": 58, "end": 73}]}
+{"id": "kb1h-00239", "lang": "en", "scenario": "support_chat", "text": "ajha@example.org", "entities": [{"type": "EMAIL", "start": 0, "end": 16}]}
+{"id": "kb1h-00240", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 3702 2640 7953 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}]}
+{"id": "kb1h-00241", "lang": "en", "scenario": "support_chat", "text": "Thanks, Manan Bala! Talk soon.", "entities": []}
+{"id": "kb1h-00242", "lang": "en", "scenario": "bank_complaint", "text": "Sent Rs. 245,906 to beneficiary account 68768269910594996 but it bounced.", "entities": [{"type": "BANK_ACCOUNT", "start": 40, "end": 57}]}
+{"id": "kb1h-00243", "lang": "hinglish", "scenario": "support_chat", "text": "parcel 672458033712 kab tak aayega?", "entities": []}
+{"id": "kb1h-00244", "lang": "hinglish", "scenario": "support_chat", "text": "parcel 689658397641 kab tak aayega?", "entities": []}
+{"id": "kb1h-00245", "lang": "en", "scenario": "customer_service", "text": "Supplier: Gavin Lal, GSTIN 15RXDFH4138VGZM, contact 87387 38918", "entities": [{"type": "GSTIN", "start": 27, "end": 42}, {"type": "PHONE", "start": 52, "end": 63}]}
+{"id": "kb1h-00246", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 261728881817682397", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 44}]}
+{"id": "kb1h-00247", "lang": "en", "scenario": "support_chat", "text": "pan elyct0630l", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00248", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 474126193915255041", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 44}]}
+{"id": "kb1h-00249", "lang": "en", "scenario": "system", "text": "Confirmation 4588570951 for 2 adults, check-in 15 Nov 2026.", "entities": []}
+{"id": "kb1h-00250", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 69103453709710711 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 35}]}
+{"id": "kb1h-00251", "lang": "hinglish", "scenario": "support_chat", "text": "8228462948 wala item damaged tha", "entities": []}
+{"id": "kb1h-00252", "lang": "en", "scenario": "loan", "text": "Co-applicant Oliver Parekh. Her PAN: YZIGO0052P. Her mobile: +91 60129 96727.", "entities": [{"type": "PAN", "start": 37, "end": 47}, {"type": "PHONE", "start": 61, "end": 76}]}
+{"id": "kb1h-00253", "lang": "en", "scenario": "system", "text": "Device serial TQ155834299IN, firmware 5732.", "entities": []}
+{"id": "kb1h-00254", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 357597655059 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 17}]}
+{"id": "kb1h-00255", "lang": "en", "scenario": "support_chat", "text": "phonepe: 9902246418@idfcfirst", "entities": [{"type": "UPI", "start": 9, "end": 29}]}
+{"id": "kb1h-00256", "lang": "en", "scenario": "support_chat", "text": "Please quote INV-2026-459989 in all replies.", "entities": []}
+{"id": "kb1h-00257", "lang": "en", "scenario": "customer_service", "text": "gst - 09DGYCN9154ZYZ7, billing email yadavi894@example.in", "entities": [{"type": "GSTIN", "start": 6, "end": 21}, {"type": "EMAIL", "start": 37, "end": 57}]}
+{"id": "kb1h-00258", "lang": "en", "scenario": "kyc", "text": "pls verify kyc asap. aadhar no - 3455 8358 6503", "entities": [{"type": "AADHAAR", "start": 33, "end": 47}]}
+{"id": "kb1h-00259", "lang": "hinglish", "scenario": "customer_service", "text": "humara gstin 21ZHLHE2307M4ZC hai, bill isi pe banana", "entities": [{"type": "GSTIN", "start": 13, "end": 28}]}
+{"id": "kb1h-00260", "lang": "en", "scenario": "system", "text": "Confirmation 8694291244 for 2 adults, check-in 15 Feb 2027.", "entities": []}
+{"id": "kb1h-00261", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 713919249573 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}]}
+{"id": "kb1h-00262", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 275244802430306 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 33}]}
+{"id": "kb1h-00263", "lang": "en", "scenario": "bank_complaint", "text": "Sent Rs. 234,938 to beneficiary account 581330290119520348 but it bounced.", "entities": [{"type": "BANK_ACCOUNT", "start": 40, "end": 58}]}
+{"id": "kb1h-00264", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc AIRP0035507 and the acc is 620601957964700", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 51}]}
+{"id": "kb1h-00265", "lang": "hi", "scenario": "support_chat", "text": "udant_hay17@waicici पर भुगतान करें।", "entities": [{"type": "UPI", "start": 0, "end": 19}]}
+{"id": "kb1h-00266", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर 09952102328 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 21}]}
+{"id": "kb1h-00267", "lang": "en", "scenario": "support_chat", "text": "phonepe: wriddhishrattan9@ezeepay", "entities": [{"type": "UPI", "start": 9, "end": 33}]}
+{"id": "kb1h-00268", "lang": "en", "scenario": "customer_service", "text": "gst - 10XTITW7048W4ZO, billing email uiyengar@test.co.in", "entities": [{"type": "GSTIN", "start": 6, "end": 21}, {"type": "EMAIL", "start": 37, "end": 56}]}
+{"id": "kb1h-00269", "lang": "hinglish", "scenario": "loan", "text": "PAN QQIPE4087D hai, CIBIL check karke batao", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00270", "lang": "en", "scenario": "loan", "text": "Salary credited to 33610921088382 (ICICI Bank, branch IFSC IPOS0228053) every month.", "entities": [{"type": "BANK_ACCOUNT", "start": 19, "end": 33}, {"type": "IFSC", "start": 59, "end": 70}]}
+{"id": "kb1h-00271", "lang": "en", "scenario": "loan", "text": "Salary credited to 8356735010165039 (Axis Bank, branch IFSC JAKA0UH0404) every month.", "entities": [{"type": "BANK_ACCOUNT", "start": 19, "end": 35}, {"type": "IFSC", "start": 60, "end": 71}]}
+{"id": "kb1h-00272", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc HDFC0356447 and the acc is 374244150732", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 48}]}
+{"id": "kb1h-00273", "lang": "hinglish", "scenario": "support_chat", "text": "parcel 699739035072 kab tak aayega?", "entities": []}
+{"id": "kb1h-00274", "lang": "hinglish", "scenario": "support_chat", "text": "mail kar dena ztailor@example.in pe", "entities": [{"type": "EMAIL", "start": 14, "end": 32}]}
+{"id": "kb1h-00275", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 6012 0242 8510, the one on my new card is 9616 5650 9338.", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}, {"type": "AADHAAR", "start": 65, "end": 79}]}
+{"id": "kb1h-00276", "lang": "en", "scenario": "loan", "text": "Salary credited to 128939610 (SBI, branch IFSC IDIB0117286) every month.", "entities": [{"type": "BANK_ACCOUNT", "start": 19, "end": 28}, {"type": "IFSC", "start": 47, "end": 58}]}
+{"id": "kb1h-00277", "lang": "en", "scenario": "support_chat", "text": "I've paid from ishani649@timecosmos twice. Please reverse one.", "entities": [{"type": "UPI", "start": 15, "end": 35}]}
+{"id": "kb1h-00278", "lang": "hinglish", "scenario": "bank_complaint", "text": "khate me paise nahi aaye, khata no 91857153314204410", "entities": [{"type": "BANK_ACCOUNT", "start": 35, "end": 52}]}
+{"id": "kb1h-00279", "lang": "en", "scenario": "system", "text": "Your parcel 480685405078 is out for delivery.", "entities": []}
+{"id": "kb1h-00280", "lang": "hinglish", "scenario": "loan", "text": "PAN KWNPX4665R hai, CIBIL check karke batao", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00281", "lang": "hinglish", "scenario": "support_chat", "text": "number note karlo +917666203984", "entities": [{"type": "PHONE", "start": 18, "end": 31}]}
+{"id": "kb1h-00282", "lang": "en", "scenario": "system", "text": "Your parcel 733119006857 is out for delivery.", "entities": []}
+{"id": "kb1h-00283", "lang": "hinglish", "scenario": "support_chat", "text": "number note karlo 918790778598", "entities": [{"type": "PHONE", "start": 18, "end": 30}]}
+{"id": "kb1h-00284", "lang": "en", "scenario": "loan", "text": "Co-applicant Ati Sodhi. Her PAN: UZXPM5168I. Her mobile: +91-8183944758.", "entities": [{"type": "PAN", "start": 33, "end": 43}, {"type": "PHONE", "start": 57, "end": 71}]}
+{"id": "kb1h-00285", "lang": "hinglish", "scenario": "support_chat", "text": "bhai 8838253227@fam pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 19}]}
+{"id": "kb1h-00286", "lang": "hinglish", "scenario": "support_chat", "text": "7056561624 wala item damaged tha", "entities": []}
+{"id": "kb1h-00287", "lang": "hinglish", "scenario": "support_chat", "text": "parcel 715588471464 kab tak aayega?", "entities": []}
+{"id": "kb1h-00288", "lang": "en", "scenario": "customer_service", "text": "gst - 29XZFCY8202L8ZL, billing email hsekhon@test.co.in", "entities": [{"type": "GSTIN", "start": 6, "end": 21}, {"type": "EMAIL", "start": 37, "end": 55}]}
+{"id": "kb1h-00289", "lang": "hinglish", "scenario": "support_chat", "text": "7958564083 wala item damaged tha", "entities": []}
+{"id": "kb1h-00290", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर 6940924845 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 20}]}
+{"id": "kb1h-00291", "lang": "en", "scenario": "support_chat", "text": "ikshita_pat66@example.com", "entities": [{"type": "EMAIL", "start": 0, "end": 25}]}
+{"id": "kb1h-00292", "lang": "hi", "scenario": "system", "text": "पार्सल 971326495076 रास्ते में है।", "entities": []}
+{"id": "kb1h-00293", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 704669453698 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}]}
+{"id": "kb1h-00294", "lang": "en", "scenario": "loan", "text": "Salary credited to 495135117668670199 (Axis Bank, branch IFSC KVBL0721767) every month.", "entities": [{"type": "BANK_ACCOUNT", "start": 19, "end": 37}, {"type": "IFSC", "start": 62, "end": 73}]}
+{"id": "kb1h-00295", "lang": "en", "scenario": "support_chat", "text": "faris412@airtel", "entities": [{"type": "UPI", "start": 0, "end": 15}]}
+{"id": "kb1h-00296", "lang": "en", "scenario": "support_chat", "text": "pan VJRPK6711H", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00297", "lang": "hi", "scenario": "support_chat", "text": "6397035708@airtel पर भुगतान करें।", "entities": [{"type": "UPI", "start": 0, "end": 17}]}
+{"id": "kb1h-00298", "lang": "hinglish", "scenario": "support_chat", "text": "bhai upma417@ptaxis pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 19}]}
+{"id": "kb1h-00299", "lang": "hinglish", "scenario": "support_chat", "text": "bhai geetika531@fam pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 19}]}
+{"id": "kb1h-00300", "lang": "en", "scenario": "system", "text": "Confirmation 1284841564 for 2 adults, check-in 18 Oct 2026.", "entities": []}
+{"id": "kb1h-00301", "lang": "en", "scenario": "support_chat", "text": "9860443668 is my alternate number in case I don't pick up.", "entities": [{"type": "PHONE", "start": 0, "end": 10}]}
+{"id": "kb1h-00302", "lang": "en", "scenario": "bank_complaint", "text": "Sent Rs. 106,010 to beneficiary account 485779255 but it bounced.", "entities": [{"type": "BANK_ACCOUNT", "start": 40, "end": 49}]}
+{"id": "kb1h-00303", "lang": "en", "scenario": "customer_service", "text": "Name: Varenya Padmanabhan; DOB: 22/06/2027; PAN: WRVPB5081N; City: Jamshedpur", "entities": [{"type": "PAN", "start": 49, "end": 59}]}
+{"id": "kb1h-00304", "lang": "en", "scenario": "support_chat", "text": "+91 80437 43399 is my alternate number in case I don't pick up.", "entities": [{"type": "PHONE", "start": 0, "end": 15}]}
+{"id": "kb1h-00305", "lang": "hinglish", "scenario": "bank_complaint", "text": "khate me paise nahi aaye, khata no 4302610219720827", "entities": [{"type": "BANK_ACCOUNT", "start": 35, "end": 51}]}
+{"id": "kb1h-00306", "lang": "en", "scenario": "customer_service", "text": "gst - 15FEYPW3817D9ZO, billing email lipika804@example.com", "entities": [{"type": "GSTIN", "start": 6, "end": 21}, {"type": "EMAIL", "start": 37, "end": 58}]}
+{"id": "kb1h-00307", "lang": "en", "scenario": "support_chat", "text": "my num 6634762020, whatsapp only", "entities": [{"type": "PHONE", "start": 7, "end": 17}]}
+{"id": "kb1h-00308", "lang": "en", "scenario": "support_chat", "text": "I've paid from vanya_gok81@idfcfirst twice. Please reverse one.", "entities": [{"type": "UPI", "start": 15, "end": 36}]}
+{"id": "kb1h-00309", "lang": "en", "scenario": "support_chat", "text": "I got charged Rs. 377,250 for item 8458323605.", "entities": []}
+{"id": "kb1h-00310", "lang": "en", "scenario": "support_chat", "text": "my num +91 92438 13722, whatsapp only", "entities": [{"type": "PHONE", "start": 7, "end": 22}]}
+{"id": "kb1h-00311", "lang": "hinglish", "scenario": "customer_service", "text": "humara gstin 26DVGCU8814P6Z6 hai, bill isi pe banana", "entities": [{"type": "GSTIN", "start": 13, "end": 28}]}
+{"id": "kb1h-00312", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 7071 3744 9983 और पैन PIYPY3940S जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 25}, {"type": "PAN", "start": 33, "end": 43}]}
+{"id": "kb1h-00313", "lang": "en", "scenario": "support_chat", "text": "I got charged ₹788 for item 7240255773.", "entities": []}
+{"id": "kb1h-00314", "lang": "hinglish", "scenario": "loan", "text": "PAN LFDPZ4187D hai, CIBIL check karke batao", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00315", "lang": "en", "scenario": "support_chat", "text": "phonepe: rnatarajan@federal", "entities": [{"type": "UPI", "start": 9, "end": 27}]}
+{"id": "kb1h-00316", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर 06008916269 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 21}]}
+{"id": "kb1h-00317", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर 6525215074 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 20}]}
+{"id": "kb1h-00318", "lang": "hinglish", "scenario": "support_chat", "text": "bhai 9488157329@timecosmos pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 26}]}
+{"id": "kb1h-00319", "lang": "en", "scenario": "support_chat", "text": "I got charged Rs. 280,839 for item 8534683238.", "entities": []}
+{"id": "kb1h-00320", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 41010793312240669 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 22}]}
+{"id": "kb1h-00321", "lang": "hi", "scenario": "support_chat", "text": "ubika.ratti@jupiteraxis पर भुगतान करें।", "entities": [{"type": "UPI", "start": 0, "end": 23}]}
+{"id": "kb1h-00322", "lang": "hinglish", "scenario": "support_chat", "text": "6933398031 wala item damaged tha", "entities": []}
+{"id": "kb1h-00323", "lang": "hinglish", "scenario": "support_chat", "text": "parcel 610392451792 kab tak aayega?", "entities": []}
+{"id": "kb1h-00324", "lang": "en", "scenario": "support_chat", "text": "frado.dutt@pockets", "entities": [{"type": "UPI", "start": 0, "end": 18}]}
+{"id": "kb1h-00325", "lang": "hinglish", "scenario": "support_chat", "text": "number note karlo 63282 25233", "entities": [{"type": "PHONE", "start": 18, "end": 29}]}
+{"id": "kb1h-00326", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 20707851913056", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 40}]}
+{"id": "kb1h-00327", "lang": "en", "scenario": "system", "text": "Confirmation 2592772440 for 2 adults, check-in 18 Feb 2026.", "entities": []}
+{"id": "kb1h-00328", "lang": "en", "scenario": "support_chat", "text": "Please quote INV-2026-926684 in all replies.", "entities": []}
+{"id": "kb1h-00329", "lang": "en", "scenario": "support_chat", "text": "pan SRUCU1143H", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00330", "lang": "en", "scenario": "system", "text": "Files 883790665661 and 459640479017 were archived.", "entities": []}
+{"id": "kb1h-00331", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc UCBA0258315 and the acc is 890451427683130", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 51}]}
+{"id": "kb1h-00332", "lang": "en", "scenario": "support_chat", "text": "I got charged Rs. 197,047 for item 9452523596.", "entities": []}
+{"id": "kb1h-00333", "lang": "en", "scenario": "bank_complaint", "text": "Sent ₹161,878 to beneficiary account 99326800213794 but it bounced.", "entities": [{"type": "BANK_ACCOUNT", "start": 37, "end": 51}]}
+{"id": "kb1h-00334", "lang": "hinglish", "scenario": "support_chat", "text": "bhai joshuabala7@citigold pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 25}]}
+{"id": "kb1h-00335", "lang": "en", "scenario": "support_chat", "text": "Please quote INV-2026-246189 in all replies.", "entities": []}
+{"id": "kb1h-00336", "lang": "en", "scenario": "support_chat", "text": "I've paid from matthew_shr49@jio twice. Please reverse one.", "entities": [{"type": "UPI", "start": 15, "end": 32}]}
+{"id": "kb1h-00337", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 907750018674829 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 20}]}
+{"id": "kb1h-00338", "lang": "en", "scenario": "support_chat", "text": "msom@example.com", "entities": [{"type": "EMAIL", "start": 0, "end": 16}]}
+{"id": "kb1h-00339", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 82042399806294", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 40}]}
+{"id": "kb1h-00340", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 580686167545 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 17}]}
+{"id": "kb1h-00341", "lang": "hinglish", "scenario": "bank_complaint", "text": "khate me paise nahi aaye, khata no 80852380248", "entities": [{"type": "BANK_ACCOUNT", "start": 35, "end": 46}]}
+{"id": "kb1h-00342", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 50946524473 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 29}]}
+{"id": "kb1h-00343", "lang": "en", "scenario": "support_chat", "text": "inaya_dug56@ptyes", "entities": [{"type": "UPI", "start": 0, "end": 17}]}
+{"id": "kb1h-00344", "lang": "en", "scenario": "customer_service", "text": "Supplier: Ansh Atwal, GSTIN 26IDGPT7862Y8ZM, contact +91 80248 78614", "entities": [{"type": "GSTIN", "start": 28, "end": 43}, {"type": "PHONE", "start": 53, "end": 68}]}
+{"id": "kb1h-00345", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 941470089459543 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 20}]}
+{"id": "kb1h-00346", "lang": "en", "scenario": "customer_service", "text": "Name: Liam Saraf; DOB: 17/08/2027; PAN: DYTFV6142U; City: Rajpur Sonarpur", "entities": [{"type": "PAN", "start": 40, "end": 50}]}
+{"id": "kb1h-00347", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 7656675522", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 36}]}
+{"id": "kb1h-00348", "lang": "en", "scenario": "support_chat", "text": "ayaan_kri27@uco", "entities": [{"type": "UPI", "start": 0, "end": 15}]}
+{"id": "kb1h-00349", "lang": "en", "scenario": "customer_service", "text": "Name: Brinda Thaker; DOB: 13/04/2026; PAN: CNCPQ0939N; City: Rampur", "entities": [{"type": "PAN", "start": 43, "end": 53}]}
+{"id": "kb1h-00350", "lang": "hinglish", "scenario": "customer_service", "text": "humara gstin 37EHVPY3814B3ZR hai, bill isi pe banana", "entities": [{"type": "GSTIN", "start": 13, "end": 28}]}
+{"id": "kb1h-00351", "lang": "en", "scenario": "support_chat", "text": "pan UMJCE6941Y", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00352", "lang": "hinglish", "scenario": "support_chat", "text": "bhai oni317@jio pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 15}]}
+{"id": "kb1h-00353", "lang": "en", "scenario": "kyc", "text": "That ID (3591 5081 1537) was rejected by the system.", "entities": []}
+{"id": "kb1h-00354", "lang": "en", "scenario": "system", "text": "Confirmation 8274807989 for 2 adults, check-in 25/11/2025.", "entities": []}
+{"id": "kb1h-00355", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 971734558 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 14}]}
+{"id": "kb1h-00356", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 5383 4980 3209, the one on my new card is 6651-4191-6680.", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}, {"type": "AADHAAR", "start": 65, "end": 79}]}
+{"id": "kb1h-00357", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 405854179267973 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 33}]}
+{"id": "kb1h-00358", "lang": "hinglish", "scenario": "support_chat", "text": "bhai 7431807334@hsbc pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 20}]}
+{"id": "kb1h-00359", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc ICIC0090153 and the acc is 184852955410256", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 51}]}
+{"id": "kb1h-00360", "lang": "en", "scenario": "support_chat", "text": "pan ZWOHY1512L", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00361", "lang": "hinglish", "scenario": "support_chat", "text": "number note karlo 9715572189", "entities": [{"type": "PHONE", "start": 18, "end": 28}]}
+{"id": "kb1h-00362", "lang": "en", "scenario": "loan", "text": "Co-applicant Yachana De. Her PAN: LIVPA3486Y. Her mobile: +91 92622 01398.", "entities": [{"type": "PAN", "start": 34, "end": 44}, {"type": "PHONE", "start": 58, "end": 73}]}
+{"id": "kb1h-00363", "lang": "en", "scenario": "customer_service", "text": "gst - 01GSRCC5598O1ZO, billing email mviswanathan@example.in", "entities": [{"type": "GSTIN", "start": 6, "end": 21}, {"type": "EMAIL", "start": 37, "end": 60}]}
+{"id": "kb1h-00364", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc QRTB0MD1923 and the acc is 8997190726377921", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 52}]}
+{"id": "kb1h-00365", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 996133069300 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}]}
+{"id": "kb1h-00366", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc ESFB0BO0633 and the acc is 996402707", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 45}]}
+{"id": "kb1h-00367", "lang": "en", "scenario": "support_chat", "text": "The code 6122829851 didn't work at checkout.", "entities": []}
+{"id": "kb1h-00368", "lang": "en", "scenario": "customer_service", "text": "Name: Ria Goswami; DOB: 24 Jan 2027; PAN: ACAHR1889T; City: Jalgaon", "entities": [{"type": "PAN", "start": 42, "end": 52}]}
+{"id": "kb1h-00369", "lang": "en", "scenario": "support_chat", "text": "Please quote INV-2026-810894 in all replies.", "entities": []}
+{"id": "kb1h-00370", "lang": "en", "scenario": "support_chat", "text": "9608302873 is my alternate number in case I don't pick up.", "entities": [{"type": "PHONE", "start": 0, "end": 10}]}
+{"id": "kb1h-00371", "lang": "en", "scenario": "customer_service", "text": "Supplier: Lohit Solanki, GSTIN 14CRQHL1131CTZX, contact 08444427995", "entities": [{"type": "GSTIN", "start": 31, "end": 46}, {"type": "PHONE", "start": 56, "end": 67}]}
+{"id": "kb1h-00372", "lang": "en", "scenario": "support_chat", "text": "Is 111019 serviceable?", "entities": []}
+{"id": "kb1h-00373", "lang": "en", "scenario": "support_chat", "text": "I got charged INR 112235 for item 9769931000.", "entities": []}
+{"id": "kb1h-00374", "lang": "en", "scenario": "support_chat", "text": "jbhatia@equitas", "entities": [{"type": "UPI", "start": 0, "end": 15}]}
+{"id": "kb1h-00375", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 394742445", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 35}]}
+{"id": "kb1h-00376", "lang": "en", "scenario": "support_chat", "text": "The code 6561272795 didn't work at checkout.", "entities": []}
+{"id": "kb1h-00377", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 630680538558, the one on my new card is 551821056552.", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}, {"type": "AADHAAR", "start": 63, "end": 75}]}
+{"id": "kb1h-00378", "lang": "hi", "scenario": "support_chat", "text": "6836813340@rbl पर भुगतान करें।", "entities": [{"type": "UPI", "start": 0, "end": 14}]}
+{"id": "kb1h-00379", "lang": "en", "scenario": "system", "text": "Files 561297924635 and 501349921916 were archived.", "entities": []}
+{"id": "kb1h-00380", "lang": "en", "scenario": "loan", "text": "Salary credited to 2118015128178 (Bank of Baroda, branch IFSC MAHB0144662) every month.", "entities": [{"type": "BANK_ACCOUNT", "start": 19, "end": 32}, {"type": "IFSC", "start": 62, "end": 73}]}
+{"id": "kb1h-00381", "lang": "en", "scenario": "support_chat", "text": "phonepe: vcherian@citigold", "entities": [{"type": "UPI", "start": 9, "end": 26}]}
+{"id": "kb1h-00382", "lang": "en", "scenario": "support_chat", "text": "my num 8530631355, whatsapp only", "entities": [{"type": "PHONE", "start": 7, "end": 17}]}
+{"id": "kb1h-00383", "lang": "en", "scenario": "system", "text": "Confirmation 1311294420 for 2 adults, check-in 26/08/2027.", "entities": []}
+{"id": "kb1h-00384", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 2064199301404255 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 21}]}
+{"id": "kb1h-00385", "lang": "en", "scenario": "support_chat", "text": "8552813246@goaxb", "entities": [{"type": "UPI", "start": 0, "end": 16}]}
+{"id": "kb1h-00386", "lang": "en", "scenario": "loan", "text": "Salary credited to 433653740 (SBI, branch IFSC PLKB0HJ0777) every month.", "entities": [{"type": "BANK_ACCOUNT", "start": 19, "end": 28}, {"type": "IFSC", "start": 47, "end": 58}]}
+{"id": "kb1h-00387", "lang": "hinglish", "scenario": "support_chat", "text": "mail kar dena rayaan.malhotra@example.com pe", "entities": [{"type": "EMAIL", "start": 14, "end": 41}]}
+{"id": "kb1h-00388", "lang": "hinglish", "scenario": "bank_complaint", "text": "khate me paise nahi aaye, khata no 9716177236701314", "entities": [{"type": "BANK_ACCOUNT", "start": 35, "end": 51}]}
+{"id": "kb1h-00389", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 7773 5801 8379 और पैन MDBPN8038F जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 25}, {"type": "PAN", "start": 33, "end": 43}]}
+{"id": "kb1h-00390", "lang": "en", "scenario": "support_chat", "text": "The code 8311747721 didn't work at checkout.", "entities": []}
+{"id": "kb1h-00391", "lang": "en", "scenario": "support_chat", "text": "9513451177 is my alternate number in case I don't pick up.", "entities": [{"type": "PHONE", "start": 0, "end": 10}]}
+{"id": "kb1h-00392", "lang": "en", "scenario": "support_chat", "text": "I've paid from bchaudhari@uboi twice. Please reverse one.", "entities": [{"type": "UPI", "start": 15, "end": 30}]}
+{"id": "kb1h-00393", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 2837-9252-6507 और पैन UFWPH0971O जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 25}, {"type": "PAN", "start": 33, "end": 43}]}
+{"id": "kb1h-00394", "lang": "hi", "scenario": "support_chat", "text": "yashica312@pockets पर भुगतान करें।", "entities": [{"type": "UPI", "start": 0, "end": 18}]}
+{"id": "kb1h-00395", "lang": "en", "scenario": "customer_service", "text": "gst - 21MAVTF0573C2ZI, billing email abhatnagar@example.org", "entities": [{"type": "GSTIN", "start": 6, "end": 21}, {"type": "EMAIL", "start": 37, "end": 59}]}
+{"id": "kb1h-00396", "lang": "en", "scenario": "kyc", "text": "pls verify kyc asap. aadhar no - 9393-3734-7430", "entities": [{"type": "AADHAAR", "start": 33, "end": 47}]}
+{"id": "kb1h-00397", "lang": "en", "scenario": "bank_complaint", "text": "Sent ₹396,352 to beneficiary account 725609523 but it bounced.", "entities": [{"type": "BANK_ACCOUNT", "start": 37, "end": 46}]}
+{"id": "kb1h-00398", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 229497788629, the one on my new card is 346228295028.", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}, {"type": "AADHAAR", "start": 63, "end": 75}]}
+{"id": "kb1h-00399", "lang": "en", "scenario": "system", "text": "Confirmation 3197649324 for 2 adults, check-in 18 Sep 2026.", "entities": []}
+{"id": "kb1h-00400", "lang": "en", "scenario": "support_chat", "text": "pan ndapj1422n", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00401", "lang": "en", "scenario": "loan", "text": "Salary credited to 589173789588361 (Canara Bank, branch IFSC TMBL0436584) every month.", "entities": [{"type": "BANK_ACCOUNT", "start": 19, "end": 34}, {"type": "IFSC", "start": 61, "end": 72}]}
+{"id": "kb1h-00402", "lang": "en", "scenario": "loan", "text": "Co-applicant Yashasvi Vala. Her PAN: CWXPB9735Z. Her mobile: +91 97527 53613.", "entities": [{"type": "PAN", "start": 37, "end": 47}, {"type": "PHONE", "start": 61, "end": 76}]}
+{"id": "kb1h-00403", "lang": "en", "scenario": "support_chat", "text": "Is 723556 serviceable?", "entities": []}
+{"id": "kb1h-00404", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 6233410826961797", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 42}]}
+{"id": "kb1h-00405", "lang": "en", "scenario": "system", "text": "Confirmation 6985565270 for 2 adults, check-in 12/03/2026.", "entities": []}
+{"id": "kb1h-00406", "lang": "hi", "scenario": "system", "text": "पार्सल 751483393544 रास्ते में है।", "entities": []}
+{"id": "kb1h-00407", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 4197 9030 9864 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}]}
+{"id": "kb1h-00408", "lang": "en", "scenario": "system", "text": "Job started at 20260501025111 and finished in 42s.", "entities": []}
+{"id": "kb1h-00409", "lang": "en", "scenario": "support_chat", "text": "pan hafph2430a", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00410", "lang": "en", "scenario": "customer_service", "text": "Supplier: Sneha Trivedi, GSTIN 06CQLFK4674K6ZQ, contact 6142411904", "entities": [{"type": "GSTIN", "start": 31, "end": 46}, {"type": "PHONE", "start": 56, "end": 66}]}
+{"id": "kb1h-00411", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc INDB0723980 and the acc is 76403417119", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 47}]}
+{"id": "kb1h-00412", "lang": "hi", "scenario": "support_chat", "text": "vanya638@rapl पर भुगतान करें।", "entities": [{"type": "UPI", "start": 0, "end": 13}]}
+{"id": "kb1h-00413", "lang": "en", "scenario": "bank_complaint", "text": "Sent INR 49027 to beneficiary account 7203931734868850 but it bounced.", "entities": [{"type": "BANK_ACCOUNT", "start": 38, "end": 54}]}
+{"id": "kb1h-00414", "lang": "en", "scenario": "support_chat", "text": "63038 43793 is my alternate number in case I don't pick up.", "entities": [{"type": "PHONE", "start": 0, "end": 11}]}
+{"id": "kb1h-00415", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 542203754658 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 30}]}
+{"id": "kb1h-00416", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 1951405832237", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 39}]}
+{"id": "kb1h-00417", "lang": "en", "scenario": "kyc", "text": "pls verify kyc asap. aadhar no - 235188578413", "entities": [{"type": "AADHAAR", "start": 33, "end": 45}]}
+{"id": "kb1h-00418", "lang": "hinglish", "scenario": "support_chat", "text": "bhai yug.virk@pockets pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 21}]}
+{"id": "kb1h-00419", "lang": "hinglish", "scenario": "support_chat", "text": "number note karlo 08837576587", "entities": [{"type": "PHONE", "start": 18, "end": 29}]}
+{"id": "kb1h-00420", "lang": "hinglish", "scenario": "customer_service", "text": "humara gstin 21CUITE0821O8ZF hai, bill isi pe banana", "entities": [{"type": "GSTIN", "start": 13, "end": 28}]}
+{"id": "kb1h-00421", "lang": "hinglish", "scenario": "support_chat", "text": "number note karlo +916415681261", "entities": [{"type": "PHONE", "start": 18, "end": 31}]}
+{"id": "kb1h-00422", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 2042 8115 2898 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}]}
+{"id": "kb1h-00423", "lang": "hinglish", "scenario": "support_chat", "text": "bhai ajain@goaxb pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 16}]}
+{"id": "kb1h-00424", "lang": "en", "scenario": "support_chat", "text": "Please quote INV-2026-551378 in all replies.", "entities": []}
+{"id": "kb1h-00425", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 2467329476 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 28}]}
+{"id": "kb1h-00426", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 337185304872 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 30}]}
+{"id": "kb1h-00427", "lang": "en", "scenario": "support_chat", "text": "phonepe: sara747@yesg", "entities": [{"type": "UPI", "start": 9, "end": 21}]}
+{"id": "kb1h-00428", "lang": "en", "scenario": "support_chat", "text": "+91-8360039504 is my alternate number in case I don't pick up.", "entities": [{"type": "PHONE", "start": 0, "end": 14}]}
+{"id": "kb1h-00429", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 253545459565, the one on my new card is 3306 9302 2447.", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}, {"type": "AADHAAR", "start": 63, "end": 77}]}
+{"id": "kb1h-00430", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 7664 2385 0529, the one on my new card is 480875773554.", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}, {"type": "AADHAAR", "start": 65, "end": 77}]}
+{"id": "kb1h-00431", "lang": "hinglish", "scenario": "bank_complaint", "text": "khate me paise nahi aaye, khata no 2500351917", "entities": [{"type": "BANK_ACCOUNT", "start": 35, "end": 45}]}
+{"id": "kb1h-00432", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 2376-4764-9750 और पैन JXLCS1998C जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 25}, {"type": "PAN", "start": 33, "end": 43}]}
+{"id": "kb1h-00433", "lang": "hi", "scenario": "system", "text": "पार्सल 703335851907 रास्ते में है।", "entities": []}
+{"id": "kb1h-00434", "lang": "hi", "scenario": "support_chat", "text": "7612848513@ptsbi पर भुगतान करें।", "entities": [{"type": "UPI", "start": 0, "end": 16}]}
+{"id": "kb1h-00435", "lang": "en", "scenario": "system", "text": "Files 135626163545 and 927880296822 were archived.", "entities": []}
+{"id": "kb1h-00436", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 2819-5003-8080 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}]}
+{"id": "kb1h-00437", "lang": "en", "scenario": "kyc", "text": "pls verify kyc asap. aadhar no - 587283227068", "entities": [{"type": "AADHAAR", "start": 33, "end": 45}]}
+{"id": "kb1h-00438", "lang": "en", "scenario": "support_chat", "text": "The code 8943638701 didn't work at checkout.", "entities": []}
+{"id": "kb1h-00439", "lang": "en", "scenario": "bank_complaint", "text": "Sent Rs. 405,800 to beneficiary account 33843823923917 but it bounced.", "entities": [{"type": "BANK_ACCOUNT", "start": 40, "end": 54}]}
+{"id": "kb1h-00440", "lang": "en", "scenario": "system", "text": "Job started at 20261220221353 and finished in 42s.", "entities": []}
+{"id": "kb1h-00441", "lang": "en", "scenario": "system", "text": "Your parcel 780707118625 is out for delivery.", "entities": []}
+{"id": "kb1h-00442", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 3385633326596442 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 21}]}
+{"id": "kb1h-00443", "lang": "en", "scenario": "customer_service", "text": "Escalating: customer reachable at 7712395184 / msathe@mail.example.com.", "entities": [{"type": "PHONE", "start": 34, "end": 44}, {"type": "EMAIL", "start": 47, "end": 70}]}
+{"id": "kb1h-00444", "lang": "en", "scenario": "customer_service", "text": "Name: Elijah Khosla; DOB: 06 Sep 2026; PAN: IPQPG7982Q; City: Rajpur Sonarpur", "entities": [{"type": "PAN", "start": 44, "end": 54}]}
+{"id": "kb1h-00445", "lang": "en", "scenario": "bank_complaint", "text": "Sent ₹38,524 to beneficiary account 261565562798007 but it bounced.", "entities": [{"type": "BANK_ACCOUNT", "start": 36, "end": 51}]}
+{"id": "kb1h-00446", "lang": "hinglish", "scenario": "support_chat", "text": "mail kar dena chavvi_das75@mail.example.com pe", "entities": [{"type": "EMAIL", "start": 14, "end": 43}]}
+{"id": "kb1h-00447", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 8942 8025 6599 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}]}
+{"id": "kb1h-00448", "lang": "en", "scenario": "loan", "text": "Co-applicant Jasmit Dhar. Her PAN: ZFRPR6241E. Her mobile: 6957774580.", "entities": [{"type": "PAN", "start": 35, "end": 45}, {"type": "PHONE", "start": 59, "end": 69}]}
+{"id": "kb1h-00449", "lang": "hinglish", "scenario": "support_chat", "text": "parcel 957154699940 kab tak aayega?", "entities": []}
+{"id": "kb1h-00450", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 7615-8045-4725 और पैन cggpb2243h जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 25}, {"type": "PAN", "start": 33, "end": 43}]}
+{"id": "kb1h-00451", "lang": "en", "scenario": "system", "text": "Your parcel 511288126307 is out for delivery.", "entities": []}
+{"id": "kb1h-00452", "lang": "hinglish", "scenario": "support_chat", "text": "mail kar dena zdevan@mail.example.com pe", "entities": [{"type": "EMAIL", "start": 14, "end": 37}]}
+{"id": "kb1h-00453", "lang": "en", "scenario": "support_chat", "text": "pan WYFPT2401B", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00454", "lang": "en", "scenario": "support_chat", "text": "Thanks, Theodore Chandra! Talk soon.", "entities": []}
+{"id": "kb1h-00455", "lang": "en", "scenario": "customer_service", "text": "gst - 03DOFCD2395V3Z1, billing email mitali370@example.com", "entities": [{"type": "GSTIN", "start": 6, "end": 21}, {"type": "EMAIL", "start": 37, "end": 58}]}
+{"id": "kb1h-00456", "lang": "hinglish", "scenario": "support_chat", "text": "parcel 756647370222 kab tak aayega?", "entities": []}
+{"id": "kb1h-00457", "lang": "en", "scenario": "kyc", "text": "That ID (4507 8907 8905) was rejected by the system.", "entities": []}
+{"id": "kb1h-00458", "lang": "en", "scenario": "support_chat", "text": "my num 9095682088, whatsapp only", "entities": [{"type": "PHONE", "start": 7, "end": 17}]}
+{"id": "kb1h-00459", "lang": "en", "scenario": "customer_service", "text": "Supplier: Udarsh Edwin, GSTIN 12QZZHW8056W1ZO, contact 79665 79925", "entities": [{"type": "GSTIN", "start": 30, "end": 45}, {"type": "PHONE", "start": 55, "end": 66}]}
+{"id": "kb1h-00460", "lang": "hinglish", "scenario": "bank_complaint", "text": "khate me paise nahi aaye, khata no 539095584952", "entities": [{"type": "BANK_ACCOUNT", "start": 35, "end": 47}]}
+{"id": "kb1h-00461", "lang": "hinglish", "scenario": "support_chat", "text": "number note karlo 94170 26196", "entities": [{"type": "PHONE", "start": 18, "end": 29}]}
+{"id": "kb1h-00462", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 960192164196741751 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 23}]}
+{"id": "kb1h-00463", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 2743-1445-3880, the one on my new card is 894756710244.", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}, {"type": "AADHAAR", "start": 65, "end": 77}]}
+{"id": "kb1h-00464", "lang": "hinglish", "scenario": "support_chat", "text": "bhai raagini361@upi pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 19}]}
+{"id": "kb1h-00465", "lang": "hinglish", "scenario": "loan", "text": "PAN mhipq0770c hai, CIBIL check karke batao", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00466", "lang": "hinglish", "scenario": "bank_complaint", "text": "khate me paise nahi aaye, khata no 479714592", "entities": [{"type": "BANK_ACCOUNT", "start": 35, "end": 44}]}
+{"id": "kb1h-00467", "lang": "en", "scenario": "support_chat", "text": "pan UYDTU2845F", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00468", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc PUNB0HI4032 and the acc is 516897316750637783", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 54}]}
+{"id": "kb1h-00469", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 3818562277749", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 39}]}
+{"id": "kb1h-00470", "lang": "en", "scenario": "kyc", "text": "pls verify kyc asap. aadhar no - 7187-9525-1564", "entities": [{"type": "AADHAAR", "start": 33, "end": 47}]}
+{"id": "kb1h-00471", "lang": "en", "scenario": "bank_complaint", "text": "Sent ₹73,677 to beneficiary account 556982505371475957 but it bounced.", "entities": [{"type": "BANK_ACCOUNT", "start": 36, "end": 54}]}
+{"id": "kb1h-00472", "lang": "en", "scenario": "support_chat", "text": "phonepe: netra369@ibl", "entities": [{"type": "UPI", "start": 9, "end": 21}]}
+{"id": "kb1h-00473", "lang": "en", "scenario": "kyc", "text": "pls verify kyc asap. aadhar no - 5934 4391 6033", "entities": [{"type": "AADHAAR", "start": 33, "end": 47}]}
+{"id": "kb1h-00474", "lang": "hinglish", "scenario": "support_chat", "text": "number note karlo +917881314139", "entities": [{"type": "PHONE", "start": 18, "end": 31}]}
+{"id": "kb1h-00475", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 506145908 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 14}]}
+{"id": "kb1h-00476", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 859820932319 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}]}
+{"id": "kb1h-00477", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 5985660196", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 36}]}
+{"id": "kb1h-00478", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर +91-6482650006 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 24}]}
+{"id": "kb1h-00479", "lang": "en", "scenario": "system", "text": "Your parcel 725582554822 is out for delivery.", "entities": []}
+{"id": "kb1h-00480", "lang": "en", "scenario": "system", "text": "Device serial FE219124899IN, firmware 12601.", "entities": []}
+{"id": "kb1h-00481", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 86780036230353179 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 22}]}
+{"id": "kb1h-00482", "lang": "en", "scenario": "bank_complaint", "text": "Sent ₹203,273 to beneficiary account 80307830923141 but it bounced.", "entities": [{"type": "BANK_ACCOUNT", "start": 37, "end": 51}]}
+{"id": "kb1h-00483", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 715164187325 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 35}]}
+{"id": "kb1h-00484", "lang": "en", "scenario": "support_chat", "text": "Is 751862 serviceable?", "entities": []}
+{"id": "kb1h-00485", "lang": "en", "scenario": "customer_service", "text": "gst - 38UZBCJ8050D3ZO, billing email oviyahayre4@test.co.in", "entities": [{"type": "GSTIN", "start": 6, "end": 21}, {"type": "EMAIL", "start": 37, "end": 59}]}
+{"id": "kb1h-00486", "lang": "hinglish", "scenario": "loan", "text": "PAN hvgpn4713o hai, CIBIL check karke batao", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00487", "lang": "hinglish", "scenario": "customer_service", "text": "humara gstin 15CRVHJ5534V7ZW hai, bill isi pe banana", "entities": [{"type": "GSTIN", "start": 13, "end": 28}]}
+{"id": "kb1h-00488", "lang": "en", "scenario": "support_chat", "text": "9612110834@idfcbank", "entities": [{"type": "UPI", "start": 0, "end": 19}]}
+{"id": "kb1h-00489", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर 6687431797 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 20}]}
+{"id": "kb1h-00490", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 9221 7620 2908 और पैन CDZCK3039X जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 25}, {"type": "PAN", "start": 33, "end": 43}]}
+{"id": "kb1h-00491", "lang": "en", "scenario": "support_chat", "text": "phonepe: george_pau30@okhdfcbank", "entities": [{"type": "UPI", "start": 9, "end": 32}]}
+{"id": "kb1h-00492", "lang": "en", "scenario": "support_chat", "text": "7186324116@ptyes", "entities": [{"type": "UPI", "start": 0, "end": 16}]}
+{"id": "kb1h-00493", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 4020514958 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 15}]}
+{"id": "kb1h-00494", "lang": "en", "scenario": "support_chat", "text": "pan SOUFZ9834Q", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00495", "lang": "hinglish", "scenario": "bank_complaint", "text": "khate me paise nahi aaye, khata no 35588939482806", "entities": [{"type": "BANK_ACCOUNT", "start": 35, "end": 49}]}
+{"id": "kb1h-00496", "lang": "en", "scenario": "kyc", "text": "That ID (8920 8441 7585) was rejected by the system.", "entities": []}
+{"id": "kb1h-00497", "lang": "hinglish", "scenario": "support_chat", "text": "mail kar dena tara722@test.co.in pe", "entities": [{"type": "EMAIL", "start": 14, "end": 32}]}
+{"id": "kb1h-00498", "lang": "en", "scenario": "customer_service", "text": "gst - 35MWBHI7537L5ZA, billing email andrew_raj68@example.org", "entities": [{"type": "GSTIN", "start": 6, "end": 21}, {"type": "EMAIL", "start": 37, "end": 61}]}
+{"id": "kb1h-00499", "lang": "en", "scenario": "support_chat", "text": "pan lxupg3645w", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00500", "lang": "en", "scenario": "support_chat", "text": "Is 155606 serviceable?", "entities": []}
+{"id": "kb1h-00501", "lang": "en", "scenario": "support_chat", "text": "I've paid from garima_var39@unionbank twice. Please reverse one.", "entities": [{"type": "UPI", "start": 15, "end": 37}]}
+{"id": "kb1h-00502", "lang": "hinglish", "scenario": "support_chat", "text": "mail kar dena chakrika_val53@mail.example.com pe", "entities": [{"type": "EMAIL", "start": 14, "end": 45}]}
+{"id": "kb1h-00503", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर 62715 34702 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 21}]}
+{"id": "kb1h-00504", "lang": "en", "scenario": "loan", "text": "Salary credited to 846252225403502 (SBI, branch IFSC ESFB0581147) every month.", "entities": [{"type": "BANK_ACCOUNT", "start": 19, "end": 34}, {"type": "IFSC", "start": 53, "end": 64}]}
+{"id": "kb1h-00505", "lang": "en", "scenario": "support_chat", "text": "I've paid from devansh.chowdhury@yesbank twice. Please reverse one.", "entities": [{"type": "UPI", "start": 15, "end": 40}]}
+{"id": "kb1h-00506", "lang": "en", "scenario": "bank_complaint", "text": "Sent ₹205,597 to beneficiary account 70515520933 but it bounced.", "entities": [{"type": "BANK_ACCOUNT", "start": 37, "end": 48}]}
+{"id": "kb1h-00507", "lang": "en", "scenario": "kyc", "text": "Code ASVQJ1333P is not a PAN, it's our internal reference.", "entities": []}
+{"id": "kb1h-00508", "lang": "en", "scenario": "kyc", "text": "Code SYSUD0958U is not a PAN, it's our internal reference.", "entities": []}
+{"id": "kb1h-00509", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 3871-3374-6500, the one on my new card is 3563 6359 3608.", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}, {"type": "AADHAAR", "start": 65, "end": 79}]}
+{"id": "kb1h-00510", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर +91-8477700673 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 24}]}
+{"id": "kb1h-00511", "lang": "hinglish", "scenario": "loan", "text": "PAN TPRPM2147C hai, CIBIL check karke batao", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00512", "lang": "hi", "scenario": "system", "text": "पार्सल 401112506687 रास्ते में है।", "entities": []}
+{"id": "kb1h-00513", "lang": "en", "scenario": "system", "text": "Device serial JW585218871IN, firmware 48744.", "entities": []}
+{"id": "kb1h-00514", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 9336559989441", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 39}]}
+{"id": "kb1h-00515", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 615852515260536023", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 44}]}
+{"id": "kb1h-00516", "lang": "en", "scenario": "support_chat", "text": "phonepe: veer_che39@rapl", "entities": [{"type": "UPI", "start": 9, "end": 24}]}
+{"id": "kb1h-00517", "lang": "en", "scenario": "system", "text": "Job started at 20260326222958 and finished in 42s.", "entities": []}
+{"id": "kb1h-00518", "lang": "en", "scenario": "support_chat", "text": "my num +91 80063 56078, whatsapp only", "entities": [{"type": "PHONE", "start": 7, "end": 22}]}
+{"id": "kb1h-00519", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc DEUT0224829 and the acc is 95488279124", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 47}]}
+{"id": "kb1h-00520", "lang": "en", "scenario": "support_chat", "text": "phonepe: fradolanka4@ibl", "entities": [{"type": "UPI", "start": 9, "end": 24}]}
+{"id": "kb1h-00521", "lang": "en", "scenario": "support_chat", "text": "anita_bar73@kmbl", "entities": [{"type": "UPI", "start": 0, "end": 16}]}
+{"id": "kb1h-00522", "lang": "hinglish", "scenario": "loan", "text": "PAN FBUPD1990S hai, CIBIL check karke batao", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00523", "lang": "en", "scenario": "support_chat", "text": "phonepe: pratyush.madan@fam", "entities": [{"type": "UPI", "start": 9, "end": 27}]}
+{"id": "kb1h-00524", "lang": "hinglish", "scenario": "bank_complaint", "text": "khate me paise nahi aaye, khata no 90093717832", "entities": [{"type": "BANK_ACCOUNT", "start": 35, "end": 46}]}
+{"id": "kb1h-00525", "lang": "hinglish", "scenario": "bank_complaint", "text": "khate me paise nahi aaye, khata no 659025511091", "entities": [{"type": "BANK_ACCOUNT", "start": 35, "end": 47}]}
+{"id": "kb1h-00526", "lang": "hinglish", "scenario": "kyc", "text": "mera aadhar card ka no 2244-4137-9487 h", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}]}
+{"id": "kb1h-00527", "lang": "en", "scenario": "system", "text": "Job started at 20260124091459 and finished in 42s.", "entities": []}
+{"id": "kb1h-00528", "lang": "en", "scenario": "support_chat", "text": "I've paid from kai392@sib twice. Please reverse one.", "entities": [{"type": "UPI", "start": 15, "end": 25}]}
+{"id": "kb1h-00529", "lang": "en", "scenario": "system", "text": "Device serial WR767334483IN, firmware 17469.", "entities": []}
+{"id": "kb1h-00530", "lang": "en", "scenario": "support_chat", "text": "Copying from my passbook: 7031375785870", "entities": [{"type": "BANK_ACCOUNT", "start": 26, "end": 39}]}
+{"id": "kb1h-00531", "lang": "en", "scenario": "system", "text": "Device serial TY563257628IN, firmware 20206.", "entities": []}
+{"id": "kb1h-00532", "lang": "en", "scenario": "customer_service", "text": "Name: Nidra Dixit; DOB: 29 Nov 2026; PAN: PQGHZ3359Z; City: Khammam", "entities": [{"type": "PAN", "start": 42, "end": 52}]}
+{"id": "kb1h-00533", "lang": "en", "scenario": "kyc", "text": "pls verify kyc asap. aadhar no - 6451 7469 9357", "entities": [{"type": "AADHAAR", "start": 33, "end": 47}]}
+{"id": "kb1h-00534", "lang": "en", "scenario": "support_chat", "text": "Please quote INV-2026-044288 in all replies.", "entities": []}
+{"id": "kb1h-00535", "lang": "en", "scenario": "kyc", "text": "The Aadhaar on file is 4241 6766 3123, the one on my new card is 453664212933.", "entities": [{"type": "AADHAAR", "start": 23, "end": 37}, {"type": "AADHAAR", "start": 65, "end": 77}]}
+{"id": "kb1h-00536", "lang": "hinglish", "scenario": "bank_complaint", "text": "khate me paise nahi aaye, khata no 937871037091863493", "entities": [{"type": "BANK_ACCOUNT", "start": 35, "end": 53}]}
+{"id": "kb1h-00537", "lang": "en", "scenario": "kyc", "text": "Code SFUVL1712W is not a PAN, it's our internal reference.", "entities": []}
+{"id": "kb1h-00538", "lang": "en", "scenario": "bank_complaint", "text": "Sent Rs. 161,061 to beneficiary account 9109033314414 but it bounced.", "entities": [{"type": "BANK_ACCOUNT", "start": 40, "end": 53}]}
+{"id": "kb1h-00539", "lang": "en", "scenario": "support_chat", "text": "pan IAJPO3536D", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00540", "lang": "en", "scenario": "support_chat", "text": "I've paid from gaurav.mallick@cred twice. Please reverse one.", "entities": [{"type": "UPI", "start": 15, "end": 34}]}
+{"id": "kb1h-00541", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc PYTM0335056 and the acc is 963461987698742", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 51}]}
+{"id": "kb1h-00542", "lang": "en", "scenario": "support_chat", "text": "I got charged ₹434,188 for item 9308379388.", "entities": []}
+{"id": "kb1h-00543", "lang": "en", "scenario": "kyc", "text": "That ID (3156 0047 2379) was rejected by the system.", "entities": []}
+{"id": "kb1h-00544", "lang": "en", "scenario": "customer_service", "text": "Supplier: Qadim Sandal, GSTIN 20EUMHV0406O4ZQ, contact 8893512014", "entities": [{"type": "GSTIN", "start": 30, "end": 45}, {"type": "PHONE", "start": 55, "end": 65}]}
+{"id": "kb1h-00545", "lang": "en", "scenario": "loan", "text": "Co-applicant Amruta Badal. Her PAN: zrwpz2111j. Her mobile: 8296861187.", "entities": [{"type": "PAN", "start": 36, "end": 46}, {"type": "PHONE", "start": 60, "end": 70}]}
+{"id": "kb1h-00546", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 7163635766884190 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 21}]}
+{"id": "kb1h-00547", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 5327694529826243 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 34}]}
+{"id": "kb1h-00548", "lang": "en", "scenario": "support_chat", "text": "Is 280610 serviceable?", "entities": []}
+{"id": "kb1h-00549", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 849711164806527100 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 36}]}
+{"id": "kb1h-00550", "lang": "en", "scenario": "support_chat", "text": "7831183981 is my alternate number in case I don't pick up.", "entities": [{"type": "PHONE", "start": 0, "end": 10}]}
+{"id": "kb1h-00551", "lang": "hinglish", "scenario": "support_chat", "text": "mail kar dena glad@mail.example.com pe", "entities": [{"type": "EMAIL", "start": 14, "end": 35}]}
+{"id": "kb1h-00552", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc HDFC0091864 and the acc is 111619394742960479", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 54}]}
+{"id": "kb1h-00553", "lang": "hinglish", "scenario": "support_chat", "text": "bhai fiyazkapadia2@waaxis pe 500 bhej de", "entities": [{"type": "UPI", "start": 5, "end": 25}]}
+{"id": "kb1h-00554", "lang": "en", "scenario": "customer_service", "text": "Name: Aishani Dara; DOB: 26/09/2026; PAN: PKHCL1588J; City: Sonipat", "entities": [{"type": "PAN", "start": 42, "end": 52}]}
+{"id": "kb1h-00555", "lang": "en", "scenario": "support_chat", "text": "omisha_loy41@mail.example.com", "entities": [{"type": "EMAIL", "start": 0, "end": 29}]}
+{"id": "kb1h-00556", "lang": "hinglish", "scenario": "bank_complaint", "text": "khate me paise nahi aaye, khata no 59936749328280142", "entities": [{"type": "BANK_ACCOUNT", "start": 35, "end": 52}]}
+{"id": "kb1h-00557", "lang": "en", "scenario": "system", "text": "Your parcel 649367214127 is out for delivery.", "entities": []}
+{"id": "kb1h-00558", "lang": "en", "scenario": "loan", "text": "Co-applicant Caleb Vyas. Her PAN: QVNPB3666G. Her mobile: 08696863628.", "entities": [{"type": "PAN", "start": 34, "end": 44}, {"type": "PHONE", "start": 58, "end": 69}]}
+{"id": "kb1h-00559", "lang": "en", "scenario": "support_chat", "text": "Thanks, Imaran Edwin! Talk soon.", "entities": []}
+{"id": "kb1h-00560", "lang": "en", "scenario": "support_chat", "text": "I've paid from 6318254775@sbi twice. Please reverse one.", "entities": [{"type": "UPI", "start": 15, "end": 29}]}
+{"id": "kb1h-00561", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर +91 89528 22129 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 25}]}
+{"id": "kb1h-00562", "lang": "en", "scenario": "support_chat", "text": "pan dqepe8354j", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00563", "lang": "en", "scenario": "system", "text": "Your parcel 460636707601 is out for delivery.", "entities": []}
+{"id": "kb1h-00564", "lang": "en", "scenario": "support_chat", "text": "Please quote INV-2026-364309 in all replies.", "entities": []}
+{"id": "kb1h-00565", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर 916769813743 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 22}]}
+{"id": "kb1h-00566", "lang": "en", "scenario": "support_chat", "text": "Thanks, Saksham Muni! Talk soon.", "entities": []}
+{"id": "kb1h-00567", "lang": "en", "scenario": "support_chat", "text": "I've paid from dalaja.wali@axisb twice. Please reverse one.", "entities": [{"type": "UPI", "start": 15, "end": 32}]}
+{"id": "kb1h-00568", "lang": "hinglish", "scenario": "customer_service", "text": "humara gstin 38REMCE8745M8ZU hai, bill isi pe banana", "entities": [{"type": "GSTIN", "start": 13, "end": 28}]}
+{"id": "kb1h-00569", "lang": "en", "scenario": "support_chat", "text": "phonepe: sameshmann6@citi", "entities": [{"type": "UPI", "start": 9, "end": 25}]}
+{"id": "kb1h-00570", "lang": "hinglish", "scenario": "support_chat", "text": "9349508581 wala item damaged tha", "entities": []}
+{"id": "kb1h-00571", "lang": "en", "scenario": "loan", "text": "Salary credited to 644468777 (Axis Bank, branch IFSC IDIB0WT2132) every month.", "entities": [{"type": "BANK_ACCOUNT", "start": 19, "end": 28}, {"type": "IFSC", "start": 53, "end": 64}]}
+{"id": "kb1h-00572", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर +91-7237535770 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 24}]}
+{"id": "kb1h-00573", "lang": "en", "scenario": "support_chat", "text": "sanaya834@example.com", "entities": [{"type": "EMAIL", "start": 0, "end": 21}]}
+{"id": "kb1h-00574", "lang": "hinglish", "scenario": "bank_complaint", "text": "khate me paise nahi aaye, khata no 81170076816", "entities": [{"type": "BANK_ACCOUNT", "start": 35, "end": 46}]}
+{"id": "kb1h-00575", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc CSBK0963547 and the acc is 708050963350010", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 51}]}
+{"id": "kb1h-00576", "lang": "en", "scenario": "bank_complaint", "text": "Sent ₹447,439 to beneficiary account 8519695064691788 but it bounced.", "entities": [{"type": "BANK_ACCOUNT", "start": 37, "end": 53}]}
+{"id": "kb1h-00577", "lang": "en", "scenario": "loan", "text": "Salary credited to 271617689019740 (Canara Bank, branch IFSC UCBA0073597) every month.", "entities": [{"type": "BANK_ACCOUNT", "start": 19, "end": 34}, {"type": "IFSC", "start": 61, "end": 72}]}
+{"id": "kb1h-00578", "lang": "en", "scenario": "support_chat", "text": "pmadan@example.com", "entities": [{"type": "EMAIL", "start": 0, "end": 18}]}
+{"id": "kb1h-00579", "lang": "hinglish", "scenario": "customer_service", "text": "humara gstin 19JRHTS6906O6ZA hai, bill isi pe banana", "entities": [{"type": "GSTIN", "start": 13, "end": 28}]}
+{"id": "kb1h-00580", "lang": "en", "scenario": "system", "text": "Job started at 202609212337 and finished in 42s.", "entities": []}
+{"id": "kb1h-00581", "lang": "en", "scenario": "kyc", "text": "That ID (9480 4025 0304) was rejected by the system.", "entities": []}
+{"id": "kb1h-00582", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 4638959921378 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 31}]}
+{"id": "kb1h-00583", "lang": "en", "scenario": "support_chat", "text": "can u chk my acct 627284508470120 pls, money not credited", "entities": [{"type": "BANK_ACCOUNT", "start": 18, "end": 33}]}
+{"id": "kb1h-00584", "lang": "en", "scenario": "support_chat", "text": "phonepe: idika.badami@waaxis", "entities": [{"type": "UPI", "start": 9, "end": 28}]}
+{"id": "kb1h-00585", "lang": "en", "scenario": "customer_service", "text": "gst - 21EJRPW0917Q7Z8, billing email zashil499@example.com", "entities": [{"type": "GSTIN", "start": 6, "end": 21}, {"type": "EMAIL", "start": 37, "end": 58}]}
+{"id": "kb1h-00586", "lang": "en", "scenario": "customer_service", "text": "Supplier: Andrew Tiwari, GSTIN 14ABIFD2785E4ZF, contact 7562974498", "entities": [{"type": "GSTIN", "start": 31, "end": 46}, {"type": "PHONE", "start": 56, "end": 66}]}
+{"id": "kb1h-00587", "lang": "en", "scenario": "support_chat", "text": "sbi ifsc IPOS0HW0134 and the acc is 551478271", "entities": [{"type": "IFSC", "start": 9, "end": 20}, {"type": "BANK_ACCOUNT", "start": 36, "end": 45}]}
+{"id": "kb1h-00588", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर 6562231016 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 20}]}
+{"id": "kb1h-00589", "lang": "en", "scenario": "support_chat", "text": "ranveer465@example.com", "entities": [{"type": "EMAIL", "start": 0, "end": 22}]}
+{"id": "kb1h-00590", "lang": "en", "scenario": "kyc", "text": "Code NUOKA6533S is not a PAN, it's our internal reference.", "entities": []}
+{"id": "kb1h-00591", "lang": "hi", "scenario": "kyc", "text": "आधार कार्ड 857852614641 और पैन NKOPJ3746T जमा कर दिया है।", "entities": [{"type": "AADHAAR", "start": 11, "end": 23}, {"type": "PAN", "start": 31, "end": 41}]}
+{"id": "kb1h-00592", "lang": "hi", "scenario": "bank_complaint", "text": "खाता 8197647461 में पैसा नहीं आया।", "entities": [{"type": "BANK_ACCOUNT", "start": 5, "end": 15}]}
+{"id": "kb1h-00593", "lang": "en", "scenario": "support_chat", "text": "Is 482863 serviceable?", "entities": []}
+{"id": "kb1h-00594", "lang": "en", "scenario": "kyc", "text": "pls verify kyc asap. aadhar no - 2765 6181 6242", "entities": [{"type": "AADHAAR", "start": 33, "end": 47}]}
+{"id": "kb1h-00595", "lang": "en", "scenario": "support_chat", "text": "phonepe: vkorpal@kotak", "entities": [{"type": "UPI", "start": 9, "end": 22}]}
+{"id": "kb1h-00596", "lang": "en", "scenario": "system", "text": "Files 597992248060 and 587536076311 were archived.", "entities": []}
+{"id": "kb1h-00597", "lang": "en", "scenario": "support_chat", "text": "pan HJMPG6597U", "entities": [{"type": "PAN", "start": 4, "end": 14}]}
+{"id": "kb1h-00598", "lang": "en", "scenario": "system", "text": "Confirmation 7131481976 for 2 adults, check-in 04 Oct 2027.", "entities": []}
+{"id": "kb1h-00599", "lang": "hi", "scenario": "support_chat", "text": "मेरा नंबर 9239886546 है, कॉल करें।", "entities": [{"type": "PHONE", "start": 10, "end": 20}]}
