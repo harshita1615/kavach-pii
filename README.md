@@ -19,7 +19,7 @@ reply = call_llm(safe)  # the LLM only ever sees placeholders
 print(session.unmask(reply))  # 'Refund for ABCPE1234F has been sent to rahul@okaxis'
 ```
 
-> **Status:** early development (v0.1.0.dev0). Not yet on PyPI. Measured accuracy on a synthetic
+> **Status:** alpha (v0.1.0). The API may change before 1.0. Measured accuracy on a synthetic
 > benchmark is in [Accuracy](#accuracy).
 
 ## Why
@@ -41,7 +41,7 @@ The package is `kavach-pii`; the import is `kavach`. Requires Python 3.10+ and h
 dependencies. (An unrelated PyPI package named `kavach` also uses the `kavach` import name; do
 not install both in the same environment.)
 
-Until the first release is on PyPI, install from source:
+To try unreleased changes, install from source:
 
 ```bash
 pip install git+https://github.com/harshita1615/kavach-pii.git
@@ -229,7 +229,7 @@ ruff check . && ruff format --check .
 
 ## Roadmap
 
-1. **Python package** (this repo): core detection and masking ✅, benchmark ✅, PyPI release
+1. **Python package** (this repo): core detection and masking ✅, benchmark ✅, PyPI release ✅
 2. **Chrome extension**: warn before PII is pasted into ChatGPT, Claude or Gemini; runs fully
    on-device
 3. **Integrations**: web demo, OpenAI-compatible proxy, MCP server, Presidio recognizer pack,
