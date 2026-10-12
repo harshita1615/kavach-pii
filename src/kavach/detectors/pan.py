@@ -25,7 +25,7 @@ HOLDER_TYPES = "ABCFGHJLPT"
 _PATTERN = re.compile(
     # Not part of a longer alphanumeric token, e.g. the PAN inside a GSTIN.
     r"(?<![A-Za-z0-9])"
-    rf"[A-Z]{{3}}[{HOLDER_TYPES}][A-Z][ -]?\d{{4}}[ -]?[A-Z]"
+    rf"[A-Z]{{3}}[{HOLDER_TYPES}][A-Z][ -]?[0-9]{{4}}[ -]?[A-Z]"
     r"(?![A-Za-z0-9])",
     re.IGNORECASE,
 )

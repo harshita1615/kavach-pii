@@ -21,16 +21,19 @@ from kavach.validators import verhoeff
 # Between groups: a dash with optional spaces, runs of spaces/tabs, or one line break.
 _SEP = r"(?:[ \t]*-[ \t]*|[ \t]+|\r?\n)?"
 
+# ASCII digits only ([0-9], not \d): Python's \d also matches Devanagari digits,
+# which the checksum cannot handle, and JavaScript's \d does not, so the
+# TypeScript port would disagree. \b is avoided for the same reason.
 _PATTERN = re.compile(
     # Not glued to other word characters, and not preceded by a 4-digit group
     # (which would make this the tail of a 16-digit card number).
-    r"(?<!\w)(?<!\b\d{4}[ -])"
-    rf"[2-9]\d{{3}}{_SEP}\d{{4}}{_SEP}\d{{4}}"
+    r"(?<!\w)(?<!(?<!\w)[0-9]{4}[ -])"
+    rf"[2-9][0-9]{{3}}{_SEP}[0-9]{{4}}{_SEP}[0-9]{{4}}"
     # Not followed by another 4-digit group (card number) or word character.
-    r"(?![ -]?\d{4}\b)(?!\w)"
+    r"(?![ -]?[0-9]{4}(?!\w))(?!\w)"
 )
 
-_NON_DIGITS = re.compile(r"\D")
+_NON_DIGITS = re.compile(r"[^0-9]")
 
 BASE_SCORE = 0.85
 

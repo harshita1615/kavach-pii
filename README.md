@@ -209,6 +209,7 @@ Known gaps today:
 
 - Names, addresses and free-text personal details are not detected (planned for v2).
 - Landline numbers and special GSTIN formats (TDS/TCS, non-resident) are not covered.
+- IDs written with Devanagari digits (२३४५…) are not detected; only ASCII digits are.
 - About 1 in 10 random 12-digit numbers starting 2-9 pass the Aadhaar checksum, so some
   unlabelled IDs may be masked as Aadhaar. A label right before the number ("Order", "UTR",
   "PNR", "Invoice") lowers the score.

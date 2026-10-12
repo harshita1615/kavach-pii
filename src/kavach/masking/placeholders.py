@@ -9,7 +9,7 @@ from kavach.types import EntityType
 _TYPES = "|".join(sorted((e.value for e in EntityType), key=len, reverse=True))
 
 # Tolerates small LLM edits: case changes and stray spaces, e.g. "[ pan_1 ]".
-PATTERN = re.compile(rf"\[\s*({_TYPES})\s*_\s*(\d+)\s*\]", re.IGNORECASE)
+PATTERN = re.compile(rf"\[\s*({_TYPES})\s*_\s*([0-9]+)\s*\]", re.IGNORECASE)
 
 # Longest a placeholder can plausibly be while still arriving in pieces.
 MAX_LENGTH = 32

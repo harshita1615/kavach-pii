@@ -19,11 +19,11 @@ from kavach.types import Detection, EntityType
 _PATTERN = re.compile(
     r"(?<![\w+])"
     r"(?P<prefix>(?:\+|00)91[ \-]?|\(\+?91\)[ \-]?|91[ \-]?|0)?"
-    r"(?:[6-9]\d{9}|[6-9]\d{4}[ \-]\d{5}|[6-9]\d{2}[ \-]\d{3}[ \-]\d{4})"
-    r"(?!\w|[ \-]?\d)"
+    r"(?:[6-9][0-9]{9}|[6-9][0-9]{4}[ \-][0-9]{5}|[6-9][0-9]{2}[ \-][0-9]{3}[ \-][0-9]{4})"
+    r"(?!\w|[ \-]?[0-9])"
 )
 
-_NON_DIGITS = re.compile(r"\D")
+_NON_DIGITS = re.compile(r"[^0-9]")
 
 INTERNATIONAL_PREFIX_SCORE = 0.85
 BASE_SCORE = 0.6

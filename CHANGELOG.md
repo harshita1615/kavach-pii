@@ -6,6 +6,13 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Fixed
+
+- `scan()` and `mask()` raised `ValueError` on Aadhaar-shaped text mixing ASCII and Devanagari
+  digits (for example `2३४५ ६७८९ ०१२३`). All detectors now match ASCII digits only, so
+  Devanagari digits are ignored consistently instead of being picked up by some detectors and
+  crashing others.
+
 ## [0.1.0] - 2026-10-11
 
 First public release.

@@ -19,11 +19,11 @@ _PATTERN = re.compile(
     # Not glued to a word, a "+" (phone prefix) or a dash-joined number.
     r"(?<![\w+\-])"
     # Contiguous digits, or groups of 3-6 digits split by single spaces/dashes.
-    r"(?:\d{9,18}|\d{3,6}(?:[ \-]\d{3,6}){1,5})"
-    r"(?!\w|[ \-]?\d)"
+    r"(?:[0-9]{9,18}|[0-9]{3,6}(?:[ \-][0-9]{3,6}){1,5})"
+    r"(?!\w|[ \-]?[0-9])"
 )
 
-_NON_DIGITS = re.compile(r"\D")
+_NON_DIGITS = re.compile(r"[^0-9]")
 
 # Context is already required, so the pipeline does not boost this score again.
 # Set so that a number with both phone and bank context resolves to PHONE (more
