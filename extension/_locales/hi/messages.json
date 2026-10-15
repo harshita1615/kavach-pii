@@ -1,0 +1,53 @@
+{
+  "ext_name": { "message": "कवच: AI चैट के लिए निजी जानकारी की सुरक्षा" },
+  "ext_description": {
+    "message": "ChatGPT, Claude या Gemini को आधार, पैन, यूपीआई, बैंक या फ़ोन की जानकारी जाने से पहले चेताता और छिपाता है। आपके डिवाइस पर ही चलता है।"
+  },
+
+  "entity_AADHAAR_one": { "message": "आधार नंबर" },
+  "entity_AADHAAR_other": { "message": "आधार नंबर" },
+  "entity_PAN_one": { "message": "पैन" },
+  "entity_PAN_other": { "message": "पैन" },
+  "entity_UPI_one": { "message": "यूपीआई आईडी" },
+  "entity_UPI_other": { "message": "यूपीआई आईडी" },
+  "entity_IFSC_one": { "message": "IFSC कोड" },
+  "entity_IFSC_other": { "message": "IFSC कोड" },
+  "entity_BANK_ACCOUNT_one": { "message": "बैंक खाता नंबर" },
+  "entity_BANK_ACCOUNT_other": { "message": "बैंक खाता नंबर" },
+  "entity_PHONE_one": { "message": "फ़ोन नंबर" },
+  "entity_PHONE_other": { "message": "फ़ोन नंबर" },
+  "entity_GSTIN_one": { "message": "जीएसटीआईएन" },
+  "entity_GSTIN_other": { "message": "जीएसटीआईएन" },
+  "entity_EMAIL_one": { "message": "ईमेल पता" },
+  "entity_EMAIL_other": { "message": "ईमेल पते" },
+  "list_and": { "message": "और" },
+
+  "banner_send_title": {
+    "message": "इस संदेश में $SUMMARY$ है।",
+    "placeholders": { "summary": { "content": "$1" } }
+  },
+  "banner_paste_title": {
+    "message": "चिपकाए गए टेक्स्ट में $SUMMARY$ है।",
+    "placeholders": { "summary": { "content": "$1" } }
+  },
+  "banner_body": {
+    "message": "छिपाएँ दबाने पर ये [PAN_1] जैसे प्लेसहोल्डर से बदल जाते हैं, ब्राउज़र से कुछ भी बाहर जाने से पहले।"
+  },
+  "btn_mask": { "message": "छिपाएँ" },
+  "btn_send_anyway": { "message": "फिर भी भेजें" },
+  "btn_paste_anyway": { "message": "फिर भी चिपकाएँ" },
+  "btn_cancel": { "message": "रद्द करें" },
+  "notice_masked": { "message": "छिपा दिया गया। संदेश जाँचें, फिर भेजें।" },
+
+  "popup_tagline": { "message": "AI चैट के लिए निजी जानकारी की सुरक्षा" },
+  "popup_sites": { "message": "इन साइटों पर सुरक्षा" },
+  "popup_caught": { "message": "अब तक पकड़ी गई जानकारी" },
+  "popup_none_caught": { "message": "अभी तक कुछ नहीं पकड़ा गया।" },
+  "popup_reset": { "message": "गिनती रीसेट करें" },
+  "popup_privacy": {
+    "message": "पूरी तरह आपके डिवाइस पर चलता है। कवच आपके संदेश कहीं नहीं भेजता और सिर्फ़ यही गिनती सहेजता है।"
+  },
+  "popup_limits": {
+    "message": "कवच जोखिम कम करता है, पर कुछ छूट भी सकता है। भेजने से पहले जाँच लें।"
+  }
+}

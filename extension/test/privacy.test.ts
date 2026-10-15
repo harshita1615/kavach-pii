@@ -1,31 +1,49 @@
-/** The detection core must never log, store or transmit anything. */
+/** No part of the extension may log, transmit or run remote code. The
+ * detection core may not even touch browser storage or extension APIs. */
 
 import assert from "node:assert/strict";
-import { readdirSync, readFileSync } from "node:fs";
+import { readdirSync, readFileSync, statSync } from "node:fs";
 import { test } from "node:test";
 
-const CORE = new URL("../src/core/", import.meta.url);
+const SRC = new URL("../src/", import.meta.url);
 
-const FORBIDDEN = [
+const EVERYWHERE = [
   "console.",
   "fetch(",
   "XMLHttpRequest",
   "WebSocket",
+  "EventSource",
   "sendBeacon",
-  "localStorage",
-  "sessionStorage",
-  "indexedDB",
-  "chrome.",
   "eval(",
   "new Function",
   "import(",
+  "chrome.runtime.sendMessage",
+  "chrome.tabs",
+  "localStorage",
+  "sessionStorage",
+  "indexedDB",
+  "document.cookie",
 ];
+const CORE_ONLY = ["chrome."];
+// A URL inside a string literal could be fetched or loaded; URLs in comments are fine.
+const URL_STRING = /["'`]\s*(?:https?:)?\/\//;
 
-for (const file of readdirSync(CORE).filter((f) => f.endsWith(".ts"))) {
-  test(`core/${file} has no logging, storage, network or dynamic code`, () => {
-    const source = readFileSync(new URL(file, CORE), "utf-8");
-    for (const token of FORBIDDEN) {
-      assert.ok(!source.includes(token), `${file} contains ${token}`);
+function files(dir: URL, prefix = ""): { path: string; url: URL }[] {
+  return readdirSync(dir).flatMap((name) => {
+    const url = new URL(name, dir);
+    return statSync(url).isDirectory()
+      ? files(new URL(`${name}/`, dir), `${prefix}${name}/`)
+      : [{ path: `${prefix}${name}`, url }];
+  });
+}
+
+for (const file of files(SRC).filter((f) => /\.(ts|html)$/.test(f.path))) {
+  test(`${file.path}: no logging, network, remote code or extra storage`, () => {
+    const source = readFileSync(file.url, "utf-8");
+    const forbidden = file.path.startsWith("core/") ? [...EVERYWHERE, ...CORE_ONLY] : EVERYWHERE;
+    for (const token of forbidden) {
+      assert.ok(!source.includes(token), `${file.path} contains ${token}`);
     }
+    assert.doesNotMatch(source, URL_STRING, `${file.path} contains a URL string`);
   });
 }

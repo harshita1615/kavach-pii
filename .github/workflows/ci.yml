@@ -48,6 +48,12 @@ jobs:
         working-directory: extension
       - run: npm test
         working-directory: extension
+      - run: npm run package
+        working-directory: extension
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kavach-extension
+          path: extension/kavach-extension-*.zip
 
   benchmark:
     # Kavach only; the Presidio comparison needs a 400 MB spaCy model and is run locally.

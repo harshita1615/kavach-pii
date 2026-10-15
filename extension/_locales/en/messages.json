@@ -1,0 +1,53 @@
+{
+  "ext_name": { "message": "Kavach: Indian PII shield for AI chats" },
+  "ext_description": {
+    "message": "Warns before you send Aadhaar, PAN, UPI, bank or phone details to ChatGPT, Claude or Gemini, and masks them. Runs on your device."
+  },
+
+  "entity_AADHAAR_one": { "message": "Aadhaar number" },
+  "entity_AADHAAR_other": { "message": "Aadhaar numbers" },
+  "entity_PAN_one": { "message": "PAN" },
+  "entity_PAN_other": { "message": "PANs" },
+  "entity_UPI_one": { "message": "UPI ID" },
+  "entity_UPI_other": { "message": "UPI IDs" },
+  "entity_IFSC_one": { "message": "IFSC code" },
+  "entity_IFSC_other": { "message": "IFSC codes" },
+  "entity_BANK_ACCOUNT_one": { "message": "bank account number" },
+  "entity_BANK_ACCOUNT_other": { "message": "bank account numbers" },
+  "entity_PHONE_one": { "message": "phone number" },
+  "entity_PHONE_other": { "message": "phone numbers" },
+  "entity_GSTIN_one": { "message": "GSTIN" },
+  "entity_GSTIN_other": { "message": "GSTINs" },
+  "entity_EMAIL_one": { "message": "email address" },
+  "entity_EMAIL_other": { "message": "email addresses" },
+  "list_and": { "message": "and" },
+
+  "banner_send_title": {
+    "message": "This message contains $SUMMARY$.",
+    "placeholders": { "summary": { "content": "$1" } }
+  },
+  "banner_paste_title": {
+    "message": "The pasted text contains $SUMMARY$.",
+    "placeholders": { "summary": { "content": "$1" } }
+  },
+  "banner_body": {
+    "message": "Mask replaces them with placeholders like [PAN_1] before anything leaves your browser."
+  },
+  "btn_mask": { "message": "Mask" },
+  "btn_send_anyway": { "message": "Send anyway" },
+  "btn_paste_anyway": { "message": "Paste anyway" },
+  "btn_cancel": { "message": "Cancel" },
+  "notice_masked": { "message": "Masked. Check the message, then send it." },
+
+  "popup_tagline": { "message": "Indian PII shield for AI chats" },
+  "popup_sites": { "message": "Protect these sites" },
+  "popup_caught": { "message": "Items caught so far" },
+  "popup_none_caught": { "message": "Nothing caught yet." },
+  "popup_reset": { "message": "Reset counts" },
+  "popup_privacy": {
+    "message": "Runs entirely on your device. Kavach never sends your messages anywhere, and stores only these counts."
+  },
+  "popup_limits": {
+    "message": "Kavach reduces risk; it can miss things. Check before you send."
+  }
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kavach</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <img src="icons/icon32.png" width="28" height="28" alt="" />
+      <div>
+        <h1>Kavach</h1>
+        <p class="muted" data-i18n="popup_tagline"></p>
+      </div>
+    </header>
+
+    <section>
+      <h2 data-i18n="popup_sites"></h2>
+      <ul id="sites" class="list"></ul>
+    </section>
+
+    <section>
+      <h2 data-i18n="popup_caught"></h2>
+      <ul id="caught" class="list"></ul>
+      <p id="none" class="muted" data-i18n="popup_none_caught" hidden></p>
+      <button id="reset" type="button" class="link" data-i18n="popup_reset" hidden></button>
+    </section>
+
+    <footer>
+      <p data-i18n="popup_privacy"></p>
+      <p class="muted" data-i18n="popup_limits"></p>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
