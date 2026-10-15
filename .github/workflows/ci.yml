@@ -23,6 +23,32 @@ jobs:
       - run: ruff format --check .
       - run: pytest
 
+  extension:
+    # The TypeScript core must match the Python package exactly.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e .
+      - name: Rules and parity fixture are up to date with the Python package
+        run: |
+          python scripts/export_rules.py
+          python scripts/export_parity.py
+          git diff --exit-code -- extension/src/core/rules.json extension/test/fixtures/parity.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: extension/package-lock.json
+      - run: npm ci
+        working-directory: extension
+      - run: npm run typecheck
+        working-directory: extension
+      - run: npm test
+        working-directory: extension
+
   benchmark:
     # Kavach only; the Presidio comparison needs a 400 MB spaCy model and is run locally.
     runs-on: ubuntu-latest
