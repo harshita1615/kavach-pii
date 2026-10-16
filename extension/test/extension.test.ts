@@ -117,14 +117,14 @@ for (const locale of ["en", "hi"]) {
 
   test(`${locale} note: no detectable PII and no real-looking placeholder`, () => {
     assert.deepEqual(new Kavach().scan(note), []);
-    assert.doesNotMatch(note, /\[[A-Z_]+_[0-9]+\]/);
-    assert.match(note, /\[PAN_n\]/);
+    assert.doesNotMatch(note, /\[[A-Za-z_]+_[0-9]+\]/);
+    assert.ok([...note].length <= 90, `${locale} note is ${[...note].length} chars; keep it one line`);
   });
 
   test(`${locale} note: added once, and does not shift placeholder numbering`, () => {
     const session = new Kavach().session();
     const once = withNote(session.mask("PAN ABCPE1234F"), note);
-    assert.equal(once, `PAN [PAN_1]\n\n${note}`);
+    assert.equal(once, `PAN [PAN_1]\n${note}`);
     assert.equal(withNote(once, note), once);
     assert.ok(hasNote(once.replace(/\s+/g, " "), note.replace(/\s+/g, " ")));
     // Masking again with the note present keeps the existing numbering.

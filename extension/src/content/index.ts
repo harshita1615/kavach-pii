@@ -84,7 +84,7 @@ function start(site: Site): void {
             restore();
             insertAtCaret(composer, session.mask(text));
             const note = t("masked_note");
-            if (!hasNote(getText(composer), note)) appendAtEnd(composer, `\n\n${note}`);
+            if (!hasNote(getText(composer), note)) appendAtEnd(composer, `\n${note}`);
           },
         },
         {
