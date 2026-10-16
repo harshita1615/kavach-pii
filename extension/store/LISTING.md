@@ -61,7 +61,7 @@ Kavach is not affiliated with OpenAI, Anthropic or Google.
 - Small promo tile 440×280: optional
 
 **Official URL:** none
-**Homepage URL:** https://github.com/harshita1615/kavach-pii
+**Homepage URL:** https://kavach-pii.vercel.app/
 **Support URL:** https://github.com/harshita1615/kavach-pii/issues
 
 ## Privacy practices tab
@@ -94,9 +94,10 @@ nothing is "collected" in the sense the form means (transmitted off the device).
 
 **Privacy policy URL:**
 ```
-https://harshita1615.github.io/kavach-pii/privacy/
+https://kavach-pii.vercel.app/privacy/
 ```
-(Live once GitHub Pages is enabled; see below.)
+(Also served by GitHub Pages at https://harshita1615.github.io/kavach-pii/privacy/; both come
+from `docs/`.)
 
 ## Distribution tab
 
@@ -106,6 +107,6 @@ https://harshita1615.github.io/kavach-pii/privacy/
 
 ## Before submitting
 
-1. Enable GitHub Pages: repo **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: `main`, folder `/docs` → Save**. After a minute, check the privacy URL above opens.
+1. Check the privacy URL above opens. The website (`docs/`) deploys to Vercel on every push to `main`.
 2. `cd extension && npm test && npm run package`, then upload the new zip.
 3. Re-read the description against the current code: every claim must be true.

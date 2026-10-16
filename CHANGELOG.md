@@ -6,6 +6,16 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-10-16
+
+### Added
+
+- MCP server, `kavach-mcp`, installed with `pip install "kavach-pii[mcp]"`. Tools: `scan_file`
+  and `redact_file`, which let an AI assistant work from a redacted copy of a file without
+  seeing the values, and `scan_text` and `redact_text`. File access is limited to the `--root`
+  folders, input files are never overwritten, and results never contain detected values.
+- Project website: https://kavach-pii.vercel.app/
+
 ### Fixed
 
 - `scan()` and `mask()` raised `ValueError` on Aadhaar-shaped text mixing ASCII and Devanagari

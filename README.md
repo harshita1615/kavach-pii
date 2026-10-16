@@ -7,6 +7,8 @@ replaces them with placeholders before your prompt reaches an LLM, and restores 
 reply. It runs locally, has no runtime dependencies, and uses deterministic rules (patterns,
 checksums and context words) rather than another model.
 
+**Website:** [kavach-pii.vercel.app](https://kavach-pii.vercel.app/)
+
 ```python
 from kavach import Kavach
 
@@ -19,7 +21,7 @@ reply = call_llm(safe)  # the LLM only ever sees placeholders
 print(session.unmask(reply))  # 'Refund for ABCPE1234F has been sent to rahul@okaxis'
 ```
 
-> **Status:** alpha (v0.1.0). The API may change before 1.0. Measured accuracy on a synthetic
+> **Status:** alpha (v0.2.0). The API may change before 1.0. Measured accuracy on a synthetic
 > benchmark is in [Accuracy](#accuracy).
 
 ## Why
@@ -38,7 +40,7 @@ pip install kavach-pii
 ```
 
 The package is `kavach-pii`; the import is `kavach`. Requires Python 3.10+ and has no
-dependencies. (An unrelated PyPI package named `kavach` also uses the `kavach` import name; do
+dependencies. For the [MCP server](#mcp-server), install `kavach-pii[mcp]`. (An unrelated PyPI package named `kavach` also uses the `kavach` import name; do
 not install both in the same environment.)
 
 To try unreleased changes, install from source:
@@ -140,6 +142,68 @@ kavach redact chat.txt -o safe.txt    # replace PII with placeholders
 There is no `mask` command: restoring later would require saving the mapping to disk, which
 Kavach never does. Use the Python API for reversible masking.
 
+### MCP server
+
+`kavach-mcp` lets an AI assistant (Claude Desktop, Claude Code, Cursor and other
+[MCP](https://modelcontextprotocol.io/) clients) check and redact files without reading the
+personal data in them.
+
+```bash
+pip install "kavach-pii[mcp]"
+```
+
+The extra installs the official MCP Python SDK; plain `pip install kavach-pii` stays
+dependency-free. The server runs locally over stdio and makes no network calls.
+
+| Tool | What the assistant gets back |
+| --- | --- |
+| `scan_file(path)` | Types, line and column numbers and counts. Never the values |
+| `redact_file(path, output_path?, overwrite?)` | Writes `<name>.redacted.<ext>` with placeholders; returns its path and counts |
+| `scan_text(text)` | Types, positions and counts |
+| `redact_text(text)` | The text with placeholders, for sending on to a message, email, ticket or log |
+
+Ask it to "summarise customers.csv using Kavach" and it scans the file, writes
+`customers.redacted.csv` and reads only that copy, so the real values never enter the
+conversation. The server's instructions tell the assistant to work this way.
+
+**Connect it.** `--root` sets the folders the file tools may use (default: the current folder);
+repeat it for more than one.
+
+- Claude Code: `claude mcp add kavach -- kavach-mcp --root /path/to/data`, or a `.mcp.json` in the
+  project:
+
+  ```json
+  {
+    "mcpServers": {
+      "kavach": { "command": "kavach-mcp", "args": ["--root", "/path/to/data"] }
+    }
+  }
+  ```
+
+- Claude Desktop: add the same `"kavach"` entry under `mcpServers` in
+  `claude_desktop_config.json`. On Windows, give the full path to `kavach-mcp.exe` (or to
+  `python.exe` with `"args": ["-m", "kavach.mcp_server", "--root", ...]`).
+- Without installing: `uvx --from "kavach-pii[mcp]" kavach-mcp --root /path/to/data`.
+
+`--entities` and `--threshold` work as in the command-line tool.
+
+**Safety.** The file tools refuse paths outside `--root`, including through `..` or symlinks.
+They never overwrite the input file, and replace an existing redacted copy only with
+`overwrite=true`. Files must be UTF-8 text, up to 10 MB. Redaction keeps no mapping, so nothing
+can be restored through the server.
+
+**Limits.** Any text the assistant passes to `scan_text` or `redact_text`, it has already read;
+those tools protect where the text goes next, not the conversation itself. Kavach also cannot
+stop an assistant from opening the original file with its own file tools. To rule that out in
+Claude Code, keep the originals in a folder it may not read and write the redacted copies
+elsewhere, for example in `.claude/settings.json`:
+
+```json
+{ "permissions": { "deny": ["Read(./data/**)"] } }
+```
+
+with `redact_file(path="data/customers.csv", output_path="safe/customers.csv")`.
+
 ## Accuracy
 
 Measured on the **holdout split** of Kavach's
@@ -234,8 +298,8 @@ ruff check . && ruff format --check .
 2. **Chrome extension** ([extension/](https://github.com/harshita1615/kavach-pii/tree/main/extension)):
    warns before PII is pasted or sent into ChatGPT, Claude or Gemini; runs fully on-device.
    Built and tested; Chrome Web Store submission pending
-3. **Integrations**: web demo, OpenAI-compatible proxy, MCP server, Presidio recognizer pack,
-   n8n node
+3. **Integrations**: [MCP server](#mcp-server) ✅, [website](https://kavach-pii.vercel.app/) ✅;
+   next: web demo, OpenAI-compatible proxy, Presidio recognizer pack, n8n node
 
 ## Related work
 

@@ -30,6 +30,10 @@ jobs:
           python -m venv /tmp/smoke
           /tmp/smoke/bin/pip install dist/*.whl
           echo "PAN ABCPE1234F" | /tmp/smoke/bin/kavach redact | grep -q "\[PAN_1\]"
+          /tmp/smoke/bin/python -c "import kavach, sys; assert 'mcp' not in sys.modules"
+          /tmp/smoke/bin/pip install "$(ls dist/*.whl)[mcp]"
+          /tmp/smoke/bin/kavach-mcp --version
+          /tmp/smoke/bin/python -c "from pathlib import Path; from kavach.mcp_server import Workspace, build_server; build_server(Workspace([Path('.')]))"
       - uses: actions/upload-artifact@v4
         with:
           name: dist

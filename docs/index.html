@@ -191,7 +191,10 @@ safe = session.mask("My PAN is ABCPE1234F, refund to rahul@okaxis")
 reply = call_llm(safe)
 print(session.unmask(reply))</code></pre>
       <p>
-        Also a command-line scanner (<code>kavach scan</code>) for pre-commit and CI checks.
+        Also a command-line scanner (<code>kavach scan</code>) for pre-commit and CI checks, and an
+        <a href="https://github.com/harshita1615/kavach-pii#mcp-server">MCP server</a>
+        (<code>pip install "kavach-pii[mcp]"</code>) that lets AI assistants such as Claude work
+        from a redacted copy of a file without seeing the personal data in it.
         <a href="https://github.com/harshita1615/kavach-pii#readme">Read the docs</a> ·
         <a href="https://pypi.org/project/kavach-pii/">PyPI</a>
       </p>
