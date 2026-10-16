@@ -4,6 +4,7 @@ import { test } from "node:test";
 
 import { Kavach } from "../src/core/index.ts";
 import { looksLikeSendButton, SITES, siteForHost } from "../src/shared/sites.ts";
+import { hasNote, withNote } from "../src/shared/note.ts";
 import { merge } from "../src/shared/settings.ts";
 import { countByType, summarize } from "../src/shared/summary.ts";
 
@@ -108,6 +109,28 @@ test("summary of one type", () => {
   const counts = countByType(new Kavach().scan("PAN ABCPE1234F"));
   assert.equal(summarize(counts, en), "1 PAN");
 });
+
+// --- note to the AI ------------------------------------------------------------------------
+
+for (const locale of ["en", "hi"]) {
+  const note = (locale === "en" ? en : hi)("masked_note");
+
+  test(`${locale} note: no detectable PII and no real-looking placeholder`, () => {
+    assert.deepEqual(new Kavach().scan(note), []);
+    assert.doesNotMatch(note, /\[[A-Z_]+_[0-9]+\]/);
+    assert.match(note, /\[PAN_n\]/);
+  });
+
+  test(`${locale} note: added once, and does not shift placeholder numbering`, () => {
+    const session = new Kavach().session();
+    const once = withNote(session.mask("PAN ABCPE1234F"), note);
+    assert.equal(once, `PAN [PAN_1]\n\n${note}`);
+    assert.equal(withNote(once, note), once);
+    assert.ok(hasNote(once.replace(/\s+/g, " "), note.replace(/\s+/g, " ")));
+    // Masking again with the note present keeps the existing numbering.
+    assert.equal(session.mask(`${once}\nPAN AAAPZ9876K`), `${once}\nPAN [PAN_2]`);
+  });
+}
 
 // --- settings ---------------------------------------------------------------------------
 

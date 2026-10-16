@@ -38,6 +38,9 @@
   "btn_paste_anyway": { "message": "Paste anyway" },
   "btn_cancel": { "message": "Cancel" },
   "notice_masked": { "message": "Masked. Check the message, then send it." },
+  "masked_note": {
+    "message": "(Privacy note from Kavach: personal details in this message were replaced with placeholders like [PAN_n] or [PHONE_n]. They stand for real values you cannot see. Please keep them unchanged in your reply.)"
+  },
 
   "popup_tagline": { "message": "Indian PII shield for AI chats" },
   "popup_sites": { "message": "Protect these sites" },

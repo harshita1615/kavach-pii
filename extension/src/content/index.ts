@@ -9,11 +9,20 @@
 
 import { type EntityType, Kavach } from "../core/index.ts";
 import { t } from "../shared/i18n.ts";
+import { hasNote, withNote } from "../shared/note.ts";
 import { addCaught, defaults, load, onChange } from "../shared/settings.ts";
 import { looksLikeSendButton, type Site, siteForHost } from "../shared/sites.ts";
 import { countByType, summarize } from "../shared/summary.ts";
 import { showNotice, showWarning } from "./banner.ts";
-import { composerFrom, findComposer, getText, insertAtCaret, replaceAll, saveSelection } from "./dom.ts";
+import {
+  appendAtEnd,
+  composerFrom,
+  findComposer,
+  getText,
+  insertAtCaret,
+  replaceAll,
+  saveSelection,
+} from "./dom.ts";
 
 const site = siteForHost(location.hostname);
 if (site) start(site);
@@ -74,6 +83,8 @@ function start(site: Site): void {
           run: () => {
             restore();
             insertAtCaret(composer, session.mask(text));
+            const note = t("masked_note");
+            if (!hasNote(getText(composer), note)) appendAtEnd(composer, `\n\n${note}`);
           },
         },
         {
@@ -109,7 +120,7 @@ function start(site: Site): void {
         primary: true,
         run: () => {
           // Replace and let the user review; never send on their behalf after masking.
-          replaceAll(composer, session.mask(getText(composer)));
+          replaceAll(composer, withNote(session.mask(getText(composer)), t("masked_note")));
           showNotice(t("notice_masked"));
         },
       },

@@ -71,6 +71,19 @@ export function insertAtCaret(el: HTMLElement, text: string): void {
   el.dispatchEvent(new InputEvent("input", { bubbles: true, inputType: "insertText", data: text }));
 }
 
+/** Move the caret to the end of the message and insert text there. */
+export function appendAtEnd(el: HTMLElement, text: string): void {
+  el.focus();
+  if (el instanceof HTMLTextAreaElement) {
+    el.setSelectionRange(el.value.length, el.value.length);
+  } else {
+    const selection = window.getSelection();
+    selection?.selectAllChildren(el);
+    selection?.collapseToEnd();
+  }
+  insertAtCaret(el, text);
+}
+
 /** Replace the whole message with text. */
 export function replaceAll(el: HTMLElement, text: string): void {
   el.focus();
