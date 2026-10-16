@@ -15,12 +15,12 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from collections import Counter
 from pathlib import Path
 
 from kavach import __version__
 from kavach.engine import DEFAULT_THRESHOLD
 from kavach.kavach import Kavach
+from kavach.report import build as build_report
 from kavach.types import Detection, EntityType
 
 EXIT_CLEAN = 0
@@ -47,28 +47,8 @@ def _read(source: str) -> str:
         raise CliError(f"{source}: {exc.strerror}") from None
 
 
-def _line_col(text: str, index: int) -> tuple[int, int]:
-    line = text.count("\n", 0, index) + 1
-    column = index - (text.rfind("\n", 0, index) + 1) + 1
-    return line, column
-
-
 def _report(source: str, text: str, detections: list[Detection]) -> dict:
-    items = []
-    for d in detections:
-        line, column = _line_col(text, d.start)
-        items.append(
-            {
-                "type": d.entity_type.value,
-                "line": line,
-                "column": column,
-                "start": d.start,
-                "end": d.end,
-                "score": d.score,
-            }
-        )
-    counts = Counter(d.entity_type.value for d in detections)
-    return {"file": source, "count": len(detections), "counts": dict(counts), "items": items}
+    return {"file": source, **build_report(text, detections)}
 
 
 def _print_report(report: dict) -> None:
