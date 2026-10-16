@@ -13,7 +13,7 @@ import { hasNote, withNote } from "../shared/note.ts";
 import { addCaught, defaults, load, onChange } from "../shared/settings.ts";
 import { looksLikeSendButton, type Site, siteForHost } from "../shared/sites.ts";
 import { countByType, summarize } from "../shared/summary.ts";
-import { showNotice, showWarning } from "./banner.ts";
+import { close, showNotice, showWarning } from "./banner.ts";
 import {
   appendAtEnd,
   composerFrom,
@@ -34,8 +34,50 @@ function start(site: Site): void {
   let bypassUntil = 0; // after "Send anyway", let the re-sent message through
   let lastComposer: HTMLElement | null = null;
 
+  // When the extension is updated or reloaded, Chrome leaves this copy running
+  // in already-open tabs but cuts its connection ("Extension context
+  // invalidated"). An orphaned copy must switch itself off rather than throw
+  // errors or keep intercepting sends; the page's next load gets the new copy.
+  const lifetime = new AbortController();
+  const alive = (): boolean => {
+    try {
+      return Boolean(chrome.runtime?.id);
+    } catch {
+      return false;
+    }
+  };
+
+  function listen<K extends keyof DocumentEventMap>(
+    type: K,
+    handler: (event: DocumentEventMap[K]) => void,
+    _capture: true,
+  ): void {
+    document.addEventListener(
+      type,
+      (event) => {
+        if (!alive()) {
+          lifetime.abort();
+          close();
+          return;
+        }
+        try {
+          handler(event);
+        } catch (error) {
+          if (alive()) throw error;
+          lifetime.abort();
+          close();
+        }
+      },
+      { capture: true, signal: lifetime.signal },
+    );
+  }
+
   load().then((s) => (settings = s), () => {});
-  onChange((s) => (settings = s));
+  try {
+    onChange((s) => (settings = s));
+  } catch {
+    return; // already orphaned before it started
+  }
   const enabled = () => settings.enabled[site.id];
 
   function record(counts: ReadonlyMap<EntityType, number>): void {
@@ -60,7 +102,7 @@ function start(site: Site): void {
 
   // --- paste -----------------------------------------------------------------------
 
-  document.addEventListener(
+  listen(
     "paste",
     (event) => {
       if (!enabled()) return;
@@ -135,7 +177,7 @@ function start(site: Site): void {
     ]);
   }
 
-  document.addEventListener(
+  listen(
     "keydown",
     (event) => {
       if (event.key !== "Enter" || event.shiftKey || event.isComposing) return;
@@ -156,7 +198,7 @@ function start(site: Site): void {
     true,
   );
 
-  document.addEventListener(
+  listen(
     "click",
     (event) => {
       const button = (event.target as Element | null)?.closest?.("button");
@@ -166,7 +208,7 @@ function start(site: Site): void {
     true,
   );
 
-  document.addEventListener(
+  listen(
     "focusin",
     (event) => {
       const composer = composerFrom(event.target);

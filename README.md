@@ -231,8 +231,9 @@ ruff check . && ruff format --check .
 ## Roadmap
 
 1. **Python package** (this repo): core detection and masking ✅, benchmark ✅, PyPI release ✅
-2. **Chrome extension**: warn before PII is pasted into ChatGPT, Claude or Gemini; runs fully
-   on-device
+2. **Chrome extension** ([extension/](https://github.com/harshita1615/kavach-pii/tree/main/extension)):
+   warns before PII is pasted or sent into ChatGPT, Claude or Gemini; runs fully on-device.
+   Built and tested; Chrome Web Store submission pending
 3. **Integrations**: web demo, OpenAI-compatible proxy, MCP server, Presidio recognizer pack,
    n8n node
 

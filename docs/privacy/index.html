@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kavach Privacy Policy</title>
+    <meta name="description" content="Privacy policy for the Kavach browser extension. Kavach processes text only on your device and collects no personal data." />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --fg: #1f2328;
+        --muted: #59636e;
+        --border: #d1d9e0;
+        --accent: #1d4ed8;
+        --code-bg: #f6f8fa;
+        color-scheme: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0d1117;
+          --fg: #e6edf3;
+          --muted: #9198a1;
+          --border: #3d444d;
+          --accent: #4493f8;
+          --code-bg: #161b22;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font: 16px/1.6 system-ui, -apple-system, "Segoe UI", "Noto Sans Devanagari", sans-serif;
+      }
+      main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+      h1 { font-size: 28px; line-height: 1.25; margin: 0 0 4px; }
+      h2 { font-size: 19px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--border); }
+      p, ul, table { margin: 0 0 12px; }
+      ul { padding-left: 22px; }
+      li { margin: 4px 0; }
+      a { color: var(--accent); }
+      .muted { color: var(--muted); }
+      .summary {
+        margin: 24px 0;
+        padding: 16px;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        background: var(--code-bg);
+      }
+      code { font: 0.92em ui-monospace, SFMono-Regular, Consolas, monospace; background: var(--code-bg); padding: 1px 5px; border-radius: 4px; }
+      table { width: 100%; border-collapse: collapse; font-size: 15px; }
+      th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--border); }
+      th { font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Kavach Privacy Policy</h1>
+      <p class="muted">Kavach browser extension · Effective 16 October 2026</p>
+
+      <div class="summary">
+        <strong>In short:</strong> Kavach checks the text you paste or send on ChatGPT, Claude and
+        Gemini <strong>on your own device</strong>. It does not collect, store, sell or transmit your
+        messages or any personal data. It makes no network requests at all.
+      </div>
+
+      <h2>What Kavach does</h2>
+      <p>
+        Kavach is a browser extension that warns you before you send Indian personal details, such as
+        Aadhaar, PAN, UPI ID, IFSC, bank account, mobile number, GSTIN or email address, to an AI
+        chatbot, and can replace them with placeholders like <code>[PAN_1]</code> before the message
+        leaves your browser.
+      </p>
+
+      <h2>How your text is handled</h2>
+      <ul>
+        <li>
+          When you paste into or send from the message box on <code>chatgpt.com</code>,
+          <code>claude.ai</code> or <code>gemini.google.com</code>, Kavach reads that text and checks
+          it for personal details using rules that run inside your browser.
+        </li>
+        <li>
+          The text is processed in memory only. It is never saved, logged, or sent to Kavach, the
+          developer, or anyone else.
+        </li>
+        <li>
+          If you choose <strong>Mask</strong>, the details are replaced with placeholders in the
+          message box. The link between a placeholder and the original value is kept in that browser
+          tab's memory only and disappears when you close or reload the tab.
+        </li>
+        <li>
+          Kavach does not run on any other website and does not read pages, browsing history or
+          chatbot replies.
+        </li>
+      </ul>
+
+      <h2>What is stored on your device</h2>
+      <p>Kavach stores only the following, in your browser's local extension storage:</p>
+      <table>
+        <tr><th>Item</th><th>Example</th><th>Purpose</th></tr>
+        <tr>
+          <td>On/off setting for each supported site</td>
+          <td>ChatGPT: on</td>
+          <td>Remembers where you want protection</td>
+        </tr>
+        <tr>
+          <td>Count of items caught, by type</td>
+          <td>PAN: 3</td>
+          <td>Shown to you in the extension's popup</td>
+        </tr>
+      </table>
+      <p>
+        These are numbers and on/off flags only. No text, values, website addresses or identifiers
+        are stored. This data stays on your device and is not synced. You can clear the counts with
+        <strong>Reset counts</strong> in the popup, and removing the extension deletes everything.
+      </p>
+
+      <h2>What Kavach does not do</h2>
+      <ul>
+        <li>No network requests, analytics, tracking, cookies or advertising.</li>
+        <li>No collection, sale or sharing of personal data with anyone.</li>
+        <li>No remote code: all of Kavach's code is included in the extension package.</li>
+        <li>No account or sign-in.</li>
+      </ul>
+
+      <h2>Permissions</h2>
+      <ul>
+        <li>
+          <strong>Access to chatgpt.com, claude.ai and gemini.google.com:</strong> needed to check
+          the text in those sites' message boxes before it is sent. Kavach has no access to other
+          sites.
+        </li>
+        <li>
+          <strong>Storage:</strong> to save the on/off settings and counts described above, on your
+          device.
+        </li>
+      </ul>
+
+      <h2>Limitations</h2>
+      <p>
+        Kavach reduces the risk of sharing personal details, but it cannot guarantee that every
+        detail is caught. Please check your messages before sending. Kavach is not legal advice and
+        does not by itself make you or your organisation compliant with any law.
+      </p>
+
+      <h2>Open source</h2>
+      <p>
+        Kavach's source code is public, so anyone can verify these statements:
+        <a href="https://github.com/harshita1615/kavach-pii">github.com/harshita1615/kavach-pii</a>
+        (MIT licence).
+      </p>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        If this policy changes, the updated version will be published at this address with a new
+        effective date. The history of changes is visible in the public repository.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions: open an issue at
+        <a href="https://github.com/harshita1615/kavach-pii/issues">github.com/harshita1615/kavach-pii/issues</a>
+        or email <a href="mailto:work.harshitachaudhary@gmail.com">work.harshitachaudhary@gmail.com</a>.
+        Please never include real personal data in an issue.
+      </p>
+    </main>
+  </body>
+</html>
