@@ -6,6 +6,11 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Added
+
+- Web demo at https://kavach.bigforge.tech/demo/: paste text and see what Kavach finds, masks
+  and restores, running entirely in the browser with the extension's detection engine.
+
 ## [0.2.0] - 2026-10-16
 
 ### Added

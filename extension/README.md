@@ -12,6 +12,7 @@ mask it. Manifest V3; runs entirely on the device, with no network requests.
 | `src/content/` | Content script: paste/send interception, warning banner, message-box editing |
 | `src/shared/sites.ts` | Per-site selectors. Edit here when a chatbot changes its layout |
 | `src/popup/` | Toolbar popup: per-site switches and counts |
+| `src/demo/` | The website demo (kavach.bigforge.tech/demo/). `npm run build:demo` bundles it into `docs/demo/demo.js`, which is committed; CI fails if it is stale |
 | `_locales/` | English and Hindi strings |
 | `store/LISTING.md` | Chrome Web Store form answers |
 
