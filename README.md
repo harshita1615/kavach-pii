@@ -7,7 +7,7 @@ replaces them with placeholders before your prompt reaches an LLM, and restores 
 reply. It runs locally, has no runtime dependencies, and uses deterministic rules (patterns,
 checksums and context words) rather than another model.
 
-**Website:** [kavach-pii.vercel.app](https://kavach-pii.vercel.app/)
+**Website:** [kavach.bigforge.tech](https://kavach.bigforge.tech/)
 
 ```python
 from kavach import Kavach
@@ -298,7 +298,7 @@ ruff check . && ruff format --check .
 2. **Chrome extension** ([extension/](https://github.com/harshita1615/kavach-pii/tree/main/extension)):
    warns before PII is pasted or sent into ChatGPT, Claude or Gemini; runs fully on-device.
    Built and tested; Chrome Web Store submission pending
-3. **Integrations**: [MCP server](#mcp-server) ✅, [website](https://kavach-pii.vercel.app/) ✅;
+3. **Integrations**: [MCP server](#mcp-server) ✅, [website](https://kavach.bigforge.tech/) ✅;
    next: web demo, OpenAI-compatible proxy, Presidio recognizer pack, n8n node
 
 ## Related work

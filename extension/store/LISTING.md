@@ -61,7 +61,7 @@ Kavach is not affiliated with OpenAI, Anthropic or Google.
 - Small promo tile 440×280: optional
 
 **Official URL:** none
-**Homepage URL:** https://kavach-pii.vercel.app/
+**Homepage URL:** https://kavach.bigforge.tech/
 **Support URL:** https://github.com/harshita1615/kavach-pii/issues
 
 ## Privacy practices tab
@@ -94,7 +94,7 @@ nothing is "collected" in the sense the form means (transmitted off the device).
 
 **Privacy policy URL:**
 ```
-https://kavach-pii.vercel.app/privacy/
+https://kavach.bigforge.tech/privacy/
 ```
 (Also served by GitHub Pages at https://harshita1615.github.io/kavach-pii/privacy/; both come
 from `docs/`.)

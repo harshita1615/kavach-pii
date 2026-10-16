@@ -42,7 +42,7 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "https://kavach-pii.vercel.app/"
+Homepage = "https://kavach.bigforge.tech/"
 Source = "https://github.com/harshita1615/kavach-pii"
 Issues = "https://github.com/harshita1615/kavach-pii/issues"
 Benchmark = "https://github.com/harshita1615/kavach-pii/tree/main/benchmark"
