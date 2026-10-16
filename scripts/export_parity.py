@@ -35,7 +35,7 @@ EDGE_CASES = [
     "",
     "   ",
     "no pii here at all",
-    f"🙏 मेरा पैन ABCPE1234F है, फ़ोन +91 98765 43210 😊",
+    "🙏 मेरा पैन ABCPE1234F है, फ़ोन +91 98765 43210 😊",
     f"emoji before 😀😀😀 aadhaar {AADHAAR}",
     "PAN ABCPE1234F\r\nUPI rahul@okaxis\r\n",
     f"Aadhaar:\n{AADHAAR[:4]}\n{AADHAAR[4:8]}\n{AADHAAR[8:]}",

@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kavach: Indian PII Shield</title>
+    <meta name="description" content="Kavach warns before you send Aadhaar, PAN, UPI, bank or phone details to ChatGPT, Claude or Gemini, and masks them. Runs on your device. Open source." />
+    <meta property="og:title" content="Kavach: keep Indian personal data out of AI chats" />
+    <meta property="og:description" content="Detects Aadhaar, PAN, UPI, IFSC, bank account, phone, GSTIN and email, and replaces them with placeholders before they reach an AI. Runs on your device." />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon32.png" />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --fg: #1f2328;
+        --muted: #59636e;
+        --border: #d1d9e0;
+        --accent: #1d4ed8;
+        --accent-fg: #ffffff;
+        --code-bg: #f6f8fa;
+        --ok: #1a7f37;
+        color-scheme: light dark;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0d1117;
+          --fg: #e6edf3;
+          --muted: #9198a1;
+          --border: #3d444d;
+          --accent: #4493f8;
+          --accent-fg: #0d1117;
+          --code-bg: #161b22;
+          --ok: #3fb950;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font: 16px/1.6 system-ui, -apple-system, "Segoe UI", "Noto Sans Devanagari", sans-serif;
+      }
+      main { max-width: 960px; margin: 0 auto; padding: 32px 16px 64px; }
+      header.top { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 18px; }
+      header.top img { width: 32px; height: 32px; }
+      header.top nav { margin-left: auto; display: flex; gap: 16px; font-weight: 400; font-size: 15px; }
+      a { color: var(--accent); }
+      .hero { padding: 48px 0 24px; max-width: 720px; }
+      .hero h1 { font-size: clamp(30px, 6vw, 44px); line-height: 1.15; margin: 0 0 16px; }
+      .hero p { font-size: 18px; color: var(--muted); margin: 0 0 24px; }
+      .actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+      .btn {
+        display: inline-block;
+        padding: 10px 18px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        color: var(--fg);
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-fg); }
+      .btn[aria-disabled="true"] { opacity: 0.65; cursor: default; }
+      .note { font-size: 14px; color: var(--muted); }
+      h2 { font-size: 24px; margin: 56px 0 12px; }
+      .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+      .card { border: 1px solid var(--border); border-radius: 10px; padding: 16px; background: var(--code-bg); }
+      .card h3 { margin: 0 0 6px; font-size: 17px; }
+      .card p { margin: 0; color: var(--muted); font-size: 15px; }
+      figure { margin: 0; }
+      figure img { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--border); display: block; }
+      figcaption { font-size: 14px; color: var(--muted); margin-top: 6px; }
+      .shots { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+      table { width: 100%; border-collapse: collapse; font-size: 15px; }
+      th, td { text-align: left; padding: 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+      th { font-weight: 600; }
+      td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+      .table-wrap { overflow-x: auto; }
+      code, pre { font: 0.92em ui-monospace, SFMono-Regular, Consolas, monospace; }
+      code { background: var(--code-bg); padding: 1px 5px; border-radius: 4px; }
+      pre { background: var(--code-bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; overflow-x: auto; margin: 0 0 12px; }
+      pre code { background: none; padding: 0; }
+      ul.checks { list-style: none; padding: 0; margin: 0; }
+      ul.checks li { padding-left: 26px; position: relative; margin: 6px 0; }
+      ul.checks li::before { content: "✓"; position: absolute; left: 4px; color: var(--ok); font-weight: 700; }
+      footer { margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 14px; color: var(--muted); }
+      footer a { color: var(--muted); }
+      @media (max-width: 560px) {
+        header.top nav { gap: 12px; font-size: 14px; }
+        .hero { padding-top: 32px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="top">
+        <img src="assets/icon128.png" alt="" />
+        <span>Kavach</span>
+        <nav>
+          <a href="#developers">Developers</a>
+          <a href="privacy/">Privacy</a>
+          <a href="https://github.com/harshita1615/kavach-pii">GitHub</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <h1>Keep your Aadhaar, PAN and UPI out of AI chats</h1>
+        <p>
+          Kavach (कवच, "shield") warns you before you paste or send Indian personal details to
+          ChatGPT, Claude or Gemini, and swaps them for placeholders like <code>[PAN_1]</code>. It
+          runs entirely on your device.
+        </p>
+        <div class="actions">
+          <!-- CHROME_WEB_STORE_URL: replace this span with
+               <a class="btn primary" href="https://chromewebstore.google.com/detail/...">Add to Chrome, free</a>
+               once the listing is approved. -->
+          <span class="btn primary" aria-disabled="true">Chrome Web Store: coming soon</span>
+          <a class="btn" href="https://github.com/harshita1615/kavach-pii">View source on GitHub</a>
+        </div>
+        <p class="note">Free and open source (MIT). Interface in English and Hindi.</p>
+      </section>
+
+      <section class="shots" aria-label="Screenshots">
+        <figure>
+          <img src="assets/1-paste-warning.png" alt="Kavach banner on ChatGPT listing the personal details found in pasted text, with Mask, Send anyway and Cancel buttons" width="1280" height="800" />
+          <figcaption>1. Kavach pauses and tells you what it found.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/2-masked.png" alt="The message box after masking, showing placeholders such as [PAN_1] and [UPI_1] instead of the real values" width="1280" height="800" loading="lazy" />
+          <figcaption>2. Mask swaps the values for placeholders.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/4-ai-keeps-placeholders.png" alt="An AI reply that keeps the placeholders unchanged" width="1280" height="800" loading="lazy" />
+          <figcaption>3. The AI helps without seeing the real values.</figcaption>
+        </figure>
+      </section>
+
+      <h2>What it detects</h2>
+      <div class="grid">
+        <div class="card"><h3>Aadhaar</h3><p>12 digits, checked with the official Verhoeff check digit.</p></div>
+        <div class="card"><h3>PAN</h3><p>Format and holder-type letter.</p></div>
+        <div class="card"><h3>UPI ID</h3><p><code>name@okaxis</code>, <code>number@paytm</code> and other handles.</p></div>
+        <div class="card"><h3>Bank details</h3><p>IFSC codes, and account numbers when "account", "a/c" or "khata" is nearby.</p></div>
+        <div class="card"><h3>Mobile number</h3><p>Indian mobiles with <code>+91</code>, <code>0</code> or 10 digits.</p></div>
+        <div class="card"><h3>GSTIN and email</h3><p>GSTIN with its check character; standard email addresses.</p></div>
+      </div>
+      <p class="note">
+        Understands English, Hinglish and Hindi context: "mera aadhaar", "khata number", "मोबाइल".
+      </p>
+
+      <h2>Private by design</h2>
+      <ul class="checks">
+        <li>Runs entirely on your device. The extension makes no network requests at all.</li>
+        <li>Your messages are never stored, logged or sent anywhere.</li>
+        <li>Works only on chatgpt.com, claude.ai and gemini.google.com.</li>
+        <li>Stores only on/off switches and counts such as "PAN: 3", which you can reset.</li>
+        <li>Open source, so anyone can check these claims.</li>
+      </ul>
+      <p class="note">
+        Read the full <a href="privacy/">privacy policy</a>. Kavach reduces risk but can miss
+        things, so check before you send. It is not legal advice.
+      </p>
+
+      <h2>Accuracy</h2>
+      <p>
+        On a public synthetic benchmark of 600 held-out sentences in English, Hinglish and Hindi,
+        none of which were used to tune Kavach:
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th></th><th class="num">Kavach</th><th class="num">Presidio, default</th><th class="num">Presidio + Indian recognizers</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Personal values masked</td><td class="num"><strong>95.7%</strong></td><td class="num">55.9%</td><td class="num">79.3%</td></tr>
+            <tr><td>Clean sentences wrongly flagged</td><td class="num"><strong>32 / 141</strong></td><td class="num">44 / 141</td><td class="num">65 / 141</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">
+        Compared with Microsoft Presidio 2.2.364.
+        <a href="https://github.com/harshita1615/kavach-pii/blob/main/benchmark/README.md">Full results, weak spots and how to reproduce them</a>.
+      </p>
+
+      <h2 id="developers">For developers</h2>
+      <p>The same detection engine is a Python package with no dependencies. Mask before the LLM call, restore after:</p>
+      <pre><code>pip install kavach-pii</code></pre>
+      <pre><code>from kavach import Kavach
+
+session = Kavach().session()
+safe = session.mask("My PAN is ABCPE1234F, refund to rahul@okaxis")
+# 'My PAN is [PAN_1], refund to [UPI_1]'
+reply = call_llm(safe)
+print(session.unmask(reply))</code></pre>
+      <p>
+        Also a command-line scanner (<code>kavach scan</code>) for pre-commit and CI checks.
+        <a href="https://github.com/harshita1615/kavach-pii#readme">Read the docs</a> ·
+        <a href="https://pypi.org/project/kavach-pii/">PyPI</a>
+      </p>
+
+      <footer>
+        <p>
+          © 2026 Harshita Chaudhary · MIT licence ·
+          <a href="privacy/">Privacy</a> ·
+          <a href="https://github.com/harshita1615/kavach-pii/issues">Report an issue</a>
+        </p>
+        <p>Kavach is not affiliated with OpenAI, Anthropic or Google. Screenshots use made-up data.</p>
+      </footer>
+    </main>
+  </body>
+</html>

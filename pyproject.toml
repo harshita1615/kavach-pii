@@ -22,6 +22,7 @@ keywords = [
     "pan",
     "upi",
     "gstin",
+    "mcp",
 ]
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -49,9 +50,12 @@ Changelog = "https://github.com/harshita1615/kavach-pii/blob/main/CHANGELOG.md"
 
 [project.scripts]
 kavach = "kavach.cli:main"
+kavach-mcp = "kavach.mcp_server:main"
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "ruff>=0.6"]
+# The MCP server (kavach-mcp). The core library never imports it.
+mcp = ["mcp>=2.3,<3"]
+dev = ["pytest>=8", "ruff>=0.6", "mcp>=2.3,<3"]
 # Only for regenerating the dataset and comparing with Presidio; never needed at runtime.
 benchmark = ["faker>=30", "presidio-analyzer>=2.2"]
 

@@ -57,7 +57,6 @@ SHOTS = [
         "5-popup.png",
         "38.png",
         (0.7023, 0.047, 0.9613, 0.6858),  # just the popup, not the chat behind it
-
         "Runs entirely on your device",
         "No network requests. Stores only on/off switches and counts.",
     ),
@@ -65,7 +64,7 @@ SHOTS = [
 
 
 def font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:
-    for name in (["segoeuib.ttf", "arialbd.ttf"] if bold else ["segoeui.ttf", "arial.ttf"]):
+    for name in ["segoeuib.ttf", "arialbd.ttf"] if bold else ["segoeui.ttf", "arial.ttf"]:
         path = FONT_DIR / name
         if path.exists():
             return ImageFont.truetype(str(path), size)
@@ -88,7 +87,9 @@ def compose(capture: Image.Image, caption: str, sub: str) -> Image.Image:
     shot = capture.convert("RGB").resize(size, Image.LANCZOS)
 
     x, y = (W - size[0]) // 2, top + (box_h - size[1]) // 2
-    draw.rounded_rectangle((x - 2, y - 2, x + size[0] + 1, y + size[1] + 1), radius=10, outline=(61, 68, 77), width=2)
+    draw.rounded_rectangle(
+        (x - 2, y - 2, x + size[0] + 1, y + size[1] + 1), radius=10, outline=(61, 68, 77), width=2
+    )
     canvas.paste(shot, (x, y))
     return canvas
 
@@ -101,9 +102,14 @@ def main() -> None:
     for name, file, crop, caption, sub in SHOTS:
         capture = Image.open(source / file)
         if crop:
-            l, t, r, b = crop
+            left, top, right, bottom = crop
             capture = capture.crop(
-                (round(l * capture.width), round(t * capture.height), round(r * capture.width), round(b * capture.height))
+                (
+                    round(left * capture.width),
+                    round(top * capture.height),
+                    round(right * capture.width),
+                    round(bottom * capture.height),
+                )
             )
         compose(capture, caption, sub).save(OUT / name, optimize=True)
         print(f"wrote extension/store/screenshots/{name}")
