@@ -100,6 +100,11 @@
       .grid { display: grid; gap: 0 24px; grid-template-columns: 1fr 1fr; }
       .grid > section { min-width: 0; }
       @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+      .uses { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+      .use { border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+      .use h3 { margin: 0 0 6px; font-size: 16px; }
+      .use p { margin: 0 0 8px; font-size: 15px; }
+      .use .box { min-height: 0; margin-bottom: 8px; }
       footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 14px; color: var(--muted); }
       footer a { color: var(--muted); }
       noscript p { color: #b42318; }
@@ -166,11 +171,31 @@
       </div>
 
       <p class="muted">
-        This is the same detection engine as the Chrome extension and the
-        <a href="https://pypi.org/project/kavach-pii/">Python package</a>. It can miss things and
-        sometimes masks numbers that are not personal data; see the
+        Kavach can miss things and sometimes masks numbers that are not personal data; see the
         <a href="https://github.com/harshita1615/kavach-pii#accuracy">measured accuracy</a>.
       </p>
+
+      <h2>Use Kavach for real</h2>
+      <p class="muted">The same detection rules, in three forms:</p>
+      <div class="uses">
+        <div class="use">
+          <h3>Chrome extension</h3>
+          <p>Warns before you paste or send personal details on ChatGPT, Claude or Gemini, and masks them.</p>
+          <p class="muted">Coming soon to the Chrome Web Store.</p>
+        </div>
+        <div class="use">
+          <h3>Python package</h3>
+          <p>Mask prompts before your app calls an LLM and restore the reply.</p>
+          <pre class="box mono">pip install kavach-pii</pre>
+          <p><a href="https://github.com/harshita1615/kavach-pii#usage">Docs</a> · <a href="https://pypi.org/project/kavach-pii/">PyPI</a></p>
+        </div>
+        <div class="use">
+          <h3>MCP server</h3>
+          <p>Lets AI assistants such as Claude Desktop, Claude Code or Cursor work from a redacted copy of a file without seeing the personal data in it.</p>
+          <pre class="box mono">pip install "kavach-pii[mcp]"</pre>
+          <p><a href="https://github.com/harshita1615/kavach-pii#mcp-server">Setup guide</a></p>
+        </div>
+      </div>
 
       <footer>
         <p>
