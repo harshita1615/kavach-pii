@@ -46,7 +46,10 @@ function render(settings: Settings): void {
       const n = settings.caught[type]!;
       const li = document.createElement("li");
       const name = document.createElement("span");
-      name.textContent = t(`entity_${type}_${n === 1 ? "one" : "other"}`);
+      // Entity names are lowercase for use mid-sentence in the banner; in this
+      // list each starts a line, so capitalise the first letter.
+      const label = t(`entity_${type}_${n === 1 ? "one" : "other"}`);
+      name.textContent = label.charAt(0).toLocaleUpperCase() + label.slice(1);
       const count = document.createElement("span");
       count.className = "count";
       count.textContent = n.toLocaleString();
