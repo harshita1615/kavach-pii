@@ -1,6 +1,7 @@
 """The benchmark dataset is valid, and the metrics compute what they claim."""
 
 import json
+from itertools import pairwise
 from pathlib import Path
 
 import pytest
@@ -48,7 +49,7 @@ def test_spans_in_bounds_and_non_overlapping(records):
         spans = sorted((e["start"], e["end"]) for e in r["entities"])
         for start, end in spans:
             assert 0 <= start < end <= len(r["text"]), r["id"]
-        for (_, end), (start, _) in zip(spans, spans[1:], strict=False):
+        for (_, end), (start, _) in pairwise(spans):
             assert end <= start, r["id"]
 
 

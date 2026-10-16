@@ -1,3 +1,5 @@
+from itertools import pairwise
+
 import pytest
 from synthetic import AADHAAR, BANK, EMAIL, GSTIN, IFSC, KITCHEN_SINK, PAN, PHONE, UPI
 
@@ -35,7 +37,7 @@ def test_kitchen_sink_finds_every_entity_once(engine):
 
 def test_results_never_overlap(engine):
     detections = engine.analyze(KITCHEN_SINK)
-    for a, b in zip(detections, detections[1:], strict=False):
+    for a, b in pairwise(detections):
         assert a.end <= b.start
 
 

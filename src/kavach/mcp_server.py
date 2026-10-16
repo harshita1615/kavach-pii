@@ -20,10 +20,10 @@ from pathlib import Path
 from typing import Any
 
 from kavach import __version__
+from kavach.cli import detection_options
 from kavach.engine import DEFAULT_THRESHOLD
 from kavach.kavach import Kavach
 from kavach.report import build as build_report
-from kavach.types import EntityType
 
 MAX_FILE_BYTES = 10 * 1024 * 1024
 INSTALL_HINT = 'Kavach\'s MCP server needs the mcp extra: pip install "kavach-pii[mcp]"'
@@ -187,15 +187,11 @@ def build_server(
     return server
 
 
-def _entities(value: str) -> list[str]:
-    return [part.strip() for part in value.split(",") if part.strip()]
-
-
 def build_parser() -> argparse.ArgumentParser:
-    entity_names = ", ".join(e.value for e in EntityType)
     parser = argparse.ArgumentParser(
         prog="kavach-mcp",
         description="Run Kavach as an MCP server over stdio.",
+        parents=[detection_options()],
     )
     parser.add_argument("--version", action="version", version=f"kavach-mcp {__version__}")
     parser.add_argument(
@@ -205,18 +201,6 @@ def build_parser() -> argparse.ArgumentParser:
         metavar="FOLDER",
         help="folder the file tools may read and write; repeat for more "
         "(default: the current folder)",
-    )
-    parser.add_argument(
-        "--entities",
-        type=_entities,
-        metavar="LIST",
-        help=f"comma-separated entity types to detect (default: all). One of: {entity_names}",
-    )
-    parser.add_argument(
-        "--threshold",
-        type=float,
-        default=DEFAULT_THRESHOLD,
-        help=f"minimum confidence, 0-1 (default: {DEFAULT_THRESHOLD})",
     )
     return parser
 

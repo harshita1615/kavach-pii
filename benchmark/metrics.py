@@ -88,7 +88,7 @@ def false_alarms(
     gold: list[list[Span]], pred: list[list[Span]], types: list[str]
 ) -> dict[str, int]:
     """Predictions of a benchmark type that overlap no gold span at all."""
-    result = {t: 0 for t in types}
+    result = dict.fromkeys(types, 0)
     for g_doc, p_doc in zip(gold, pred, strict=True):
         for p in p_doc:
             if p.type in result and not any(p.overlaps(g) for g in g_doc):

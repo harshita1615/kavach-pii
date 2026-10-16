@@ -297,7 +297,7 @@ ruff check . && ruff format --check .
 1. **Python package** (this repo): core detection and masking ✅, benchmark ✅, PyPI release ✅
 2. **Chrome extension** ([extension/](https://github.com/harshita1615/kavach-pii/tree/main/extension)):
    warns before PII is pasted or sent into ChatGPT, Claude or Gemini; runs fully on-device.
-   Built and tested; Chrome Web Store submission pending
+   Built and tested; in Chrome Web Store review
 3. **Integrations**: [MCP server](#mcp-server) ✅, [website](https://kavach.bigforge.tech/) ✅;
    next: web demo, OpenAI-compatible proxy, Presidio recognizer pack, n8n node
 

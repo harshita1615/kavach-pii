@@ -93,7 +93,8 @@ def _entities(value: str) -> list[str]:
     return [part.strip() for part in value.split(",") if part.strip()]
 
 
-def build_parser() -> argparse.ArgumentParser:
+def detection_options() -> argparse.ArgumentParser:
+    """--entities and --threshold, shared by kavach and kavach-mcp."""
     entity_names = ", ".join(e.value for e in EntityType)
     common = argparse.ArgumentParser(add_help=False)
     common.add_argument(
@@ -108,7 +109,11 @@ def build_parser() -> argparse.ArgumentParser:
         default=DEFAULT_THRESHOLD,
         help=f"minimum confidence, 0-1 (default: {DEFAULT_THRESHOLD})",
     )
+    return common
 
+
+def build_parser() -> argparse.ArgumentParser:
+    common = detection_options()
     parser = argparse.ArgumentParser(
         prog="kavach", description="Detect and redact Indian PII in text."
     )

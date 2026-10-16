@@ -7,10 +7,10 @@ from synthetic import AADHAAR_SPACED, BANK, EMAIL, GSTIN, IFSC, KITCHEN_SINK, PA
 
 pytest.importorskip("mcp")
 
-from mcp import Client, StdioServerParameters  # noqa: E402
+from mcp import Client, StdioServerParameters
 
-from kavach import Kavach, mcp_server  # noqa: E402
-from kavach.mcp_server import Workspace, build_server, main  # noqa: E402
+from kavach import Kavach, mcp_server
+from kavach.mcp_server import Workspace, build_server, main
 
 VALUES = [AADHAAR_SPACED, PAN, UPI, IFSC, BANK, PHONE, EMAIL, GSTIN]
 NOT_UTF8 = b"PAN ABCPE1234F \xff\xfe"

@@ -133,12 +133,14 @@ def test_unknown_entity(sample, capsys):
 
 def test_bad_threshold(sample, capsys):
     assert main(["scan", "--threshold", "2", str(sample)]) == EXIT_ERROR
+    assert "threshold must be in [0, 1]" in capsys.readouterr().err
 
 
 def test_no_command_shows_usage(capsys):
     with pytest.raises(SystemExit) as exc:
         main([])
     assert exc.value.code == 2
+    assert "usage: kavach" in capsys.readouterr().err
 
 
 def test_stdin_bom_is_ignored():

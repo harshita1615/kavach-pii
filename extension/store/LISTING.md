@@ -52,12 +52,9 @@ Kavach is not affiliated with OpenAI, Anthropic or Google.
 
 **Graphic assets:**
 - Store icon 128×128: `extension/icons/icon128.png`
-- Screenshots (1 to 5, 1280×800 or 640×400, PNG or JPEG). Use made-up data only:
-  1. The paste banner on ChatGPT ("The pasted text contains 1 PAN, 1 UPI ID and 1 phone number")
-  2. The message box after Mask, showing [PAN_1] [UPI_1] [PHONE_1] and the Kavach note
-  3. The send banner on Claude or Gemini
-  4. The popup with site switches and counts
-  5. (optional) The banner in Hindi
+- Screenshots: the five 1280×800 PNGs (no alpha) in `extension/store/screenshots/`, uploaded
+  in order as Global screenshots. Regenerate them with `scripts/make_store_screenshots.py`;
+  captures must contain made-up data only.
 - Small promo tile 440×280: optional
 
 **Official URL:** none
@@ -105,8 +102,12 @@ from `docs/`.)
 - Regions: **All regions**
 - Pricing: free
 
-## Before submitting
+## Submitting an update
 
-1. Check the privacy URL above opens. The website (`docs/`) deploys to Vercel on every push to `main`.
-2. `cd extension && npm test && npm run package`, then upload the new zip.
+The account needs 2-Step Verification, or the upload is rejected.
+
+1. Bump `version` in `extension/manifest.json` and `extension/package.json`.
+2. `cd extension && npm test && npm run package`, then upload the new zip under **Package**.
 3. Re-read the description against the current code: every claim must be true.
+4. Check the privacy URL above opens. The website (`docs/`) deploys to Vercel on every push to
+   `main`.
